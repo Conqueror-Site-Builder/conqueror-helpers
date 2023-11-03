@@ -1,0 +1,98 @@
+{
+	"Import Package": {
+		"prefix": "imp",
+		"body": "import ${1:packageName} from '${2:packageName}'"
+	},
+  "Event Listener": {
+    "prefix": "ael",
+    "body": "${1:document}.addEventListener('${2:event}', (event) => {\n\t$3\n})"
+  },
+  "Click Event Listener": {
+    "prefix": "aelc",
+    "body": "${1:document}.addEventListener('click', (event) => {\n\t$2\n})"
+  },
+	"Target Element": {
+		"prefix": "te",
+		"body": "const targetElement = event.target"
+	},
+  "Const With An Array Of Elemenets": {
+    "prefix": "cqa",
+    "body": "const ${1:elements} = document.querySelectorAll('${2:element}')"
+  },
+	"Const With Element": {
+		"prefix": "cq",
+		"body": "const ${1:element} = document.querySelector('${2:element}')"
+	},
+	"Empty Const": {
+		"prefix": "ec",
+		"body": "const ${1:name} = ${2:content}"
+	},
+  "Add A Class": {
+		"prefix": "ac",
+    "body": "${1:element}.classList.add('${2:class}')"
+  },
+  "Toggle A Class": {
+    "prefix": "tc",
+    "body": "${1:element}.classList.toggle('${2:class}')"
+  },
+  "Remove A Class": {
+    "prefix": "rc",
+    "body": "${1:element}.classList.remove('${2:class}')"
+  },
+  "Set Attribute": {
+    "prefix": "sa",
+    "body": "${1:element}.setAttribute('${2:attributeName}', ${3:value})"
+  },
+  "Remove Attribute": {
+    "prefix": "ra",
+    "body": "${1:element}.removeAttribute('${2:attributeName}')"
+  },
+  "Get An Attribute": {
+    "prefix": "ga",
+    "body": "${1:element}.dataset.${2:attributeName}"
+  },
+  "Insert Adjacent HTML": {
+		"prefix": "iah",
+    "body": "${1:element}.insertAdjacentHTML('beforeend', '${2:template}')"
+  },
+  "For Each": {
+		"prefix": "fe",
+    "body": "${1:array}.forEach((${2:item}) => {\n\t$3\n})"
+  },
+	"Functional Expression": {
+		"prefix": "cf",
+		"body": "const ${1:functionName} = (${2:arguments}) => {\n\t$3\n}"
+	},
+	"Function As A Property Of An Object": {
+		"prefix": "of",
+		"body": "${1:methodName}(${2:arguments}) {\n\t$3\n}"
+	},
+  "Anonymous Function": {
+    "prefix": "af",
+    "body": "(${1:arguments}) => {\n\t$2\n}"
+  },
+  "Set Interval": {
+    "prefix": "si",
+    "body": "setInterval(($1) => {\n\t$2\n}, ${3:0})"
+  },
+  "Set Timeout": {
+    "prefix": "st",
+    "body": "setTimeout(($1) => {\n\t$2\n}, ${3:0})"
+  },
+  "Json Parse": {
+    "prefix": "jp",
+    "body": "JSON.parse($object)"
+  },
+  "Json Stringify": {
+    "prefix": "js",
+    "body": "JSON.stringify($object)"
+  },
+	"Text Content": {
+		"prefix": "tco",
+    "body": "${1:element}.textContent = '${2:content}'"
+  },
+  "Inner HTML": {
+    "prefix": "ih",
+    "body": "${1:element}.innerHTML = '${2:element}'"
+  }
+}

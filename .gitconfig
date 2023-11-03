@@ -1,0 +1,25 @@
+[user]
+  name = user
+	email = example.user@email.com
+[core]
+  autocrlf = input
+  safecrlf = warn
+  quotepath = off
+	excludesFile = path/to/.gitignore_global
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[init]
+  defaultBranch = main
+[alias]
+	a = add -A
+	b = branch
+	bd = branch -d
+	bdp = push origin -d
+	c = commit -a -m
+	p = push origin
+	t = tag
+  fp = fetch --prune
+  sq = merge --squash

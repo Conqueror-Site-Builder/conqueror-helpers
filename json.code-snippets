@@ -1,0 +1,18 @@
+{
+	"Root Empty Object": {
+		"prefix": "r",
+		"body": "{\n\t$0\n}"
+	},
+	"Object": {
+		"prefix": "o",
+		"body": "\"${1:title}\": {\n\t\"${2:key}\": \"${3:value}\"\n}"
+	},
+	"Array": {
+		"prefix": "a",
+		"body": "\"${1:title}\": [\n\t\"${2:item}\"\n]"
+	},
+	"Item": {
+		"prefix": "i",
+		"body": "\"${1:key}\": \"${2:value}\"\n"
+	}
+}
