@@ -1,0 +1,10 @@
+ForegroundColour=#fff
+BackgroundColour=#000
+CursorColour=#fff
+CursorType=line
+CursorBlinks=expand
+Scrollbar=none
+Language=en
+BoldAsFont=yes
+FontSmoothing=full
+Term=xterm-256color
