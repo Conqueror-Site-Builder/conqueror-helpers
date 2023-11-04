@@ -1,514 +1,646 @@
 {
-	"Extend Templates": {
-		"prefix": "ex",
-		"body": "@extend %$0"
+	// Include and extend
+	"Extend (custom)": {
+		"scope": "scss",
+		"prefix": "ext",
+		"body": "@extend %$0;"
 	},
-	"Mixin Gradient For Text": {
-		"prefix": "gt",
-		"body": "@include text-gradient($0);"
+	"Include (custom)": {
+		"scope": "scss",
+		"prefix": "inc",
+		"body": "@include $0;"
 	},
-	"Mixin Truncate": {
-		"prefix": "trun",
-		"body": "@include truncate(${1:400}, ${2:text}, ${3:3}, ${4:1});"
-	},
-	"Mixin Slide": {
-		"prefix": "slide",
-		"body": "@include slide(${1:5}, ${2:100}, ${3:1}, 0.${4:2}, ${5:top});"
-	},
-	"Mixin Responsive Output": {
-		"prefix": "ro",
-		"body": "@include responsive-output(${2:400}, ${3:\\$tablet}, ${4:0});"
-	},
-	"Mixin Pseudo": {
-		"prefix": "pseudo",
-		"body": "@include pseudo($0);"
-	},
-	"Mixin Currency": {
-		"prefix": "cur",
-		"body": "@include currency(\"${0:₽}\");"
-	},
-	"Mixin Grid Cards": {
-		"prefix": "gc",
-		"body": "@include grid(${1:fill}, to-rem(${2:290}), ${3:1fr}, ${4:\\$phone}) {\n\tgap: to-rem(${5:30});\n\tjustify-items: center;\n}"
-	},
-	"Triangle": {
-		"prefix": "triangle",
-		"body": "@include triangle(var(--color-$1, #{\\$color-$2}), ${3:bottom}, ${4:10}, ${5:10}, ${6:10}, ${7:10}, ${8:absolute});"
-	},
-	"Responsive Value": {
-		"prefix": "rv",
-		"body": "@include responsive-value(\"$1\", $2, $3);"
-	},
-	"Responsive Font Value": {
-		"prefix": "rvf",
-		"body": "@include responsive-value(\"font-size\", ${1:\\$font-size}, $2);"
-	},
-	"Responsive Gap Value": {
-		"prefix": "rvg",
-		"body": "@include responsive-value(\"gap\", $1, $2);"
-	},
-	"Responsive Margin Value": {
-		"prefix": "rvm",
-		"body": "@include responsive-value(\"margin\", $1, $2);"
-	},
-	"Responsive Margin Top Value": {
-		"prefix": "rvmt",
-		"body": "@include responsive-value(\"margin-block-start\", $1, $2);"
-	},
-	"Responsive Margin Bottom Value": {
-		"prefix": "rvmb",
-		"body": "@include responsive-value(\"margin-block-end\", $1, $2);"
-	},
-	"Responsive Margin Left Value": {
-		"prefix": "rvml",
-		"body": "@include responsive-value(\"margin-inline-start\", $1, $2);"
-	},
-	"Responsive Margin Right Value": {
-		"prefix": "rvmr",
-		"body": "@include responsive-value(\"margin-inline-end\", $1, $2);"
-	},
-	"Responsive Height Value": {
-		"prefix": "rvh",
-		"body": "@include responsive-value(\"block-size\", $1, $2);"
-	},
-	"Responsive Width Value": {
-		"prefix": "rvw",
-		"body": "@include responsive-value(\"inline-size\", $1, $2);"
-	},
-	"Responsive Padding Value": {
-		"prefix": "rvp",
-		"body": "@include responsive-value(\"padding\", $1, $2);"
-	},
-	"Responsive Padding Top Value": {
-		"prefix": "rvpt",
-		"body": "@include responsive-value(\"padding-block-start\", $1, $2);"
-	},
-	"Responsive Padding Bottom Value": {
-		"prefix": "rvpb",
-		"body": "@include responsive-value(\"padding-block-end\", $1, $2);"
-	},
-	"Responsive Padding Left Value": {
-		"prefix": "rvpl",
-		"body": "@include responsive-value(\"padding-inline-start\", $1, $2);"
-	},
-	"Responsive Padding Right Value": {
-		"prefix": "rvpr",
-		"body": "@include responsive-value(\"padding-inline-end\", $1, $2);"
-	},
-	"@media Max Width And Min Width": {
-		"prefix": "mmmd",
-		"body": "@include media-min-max($1, $2) {\n\t$3\n}"
-	},
-	"@media min": {
-		"prefix": "mmd",
-		"body": "@include media-min($1) {\n\t$2\n}"
-	},
-	"@media max": {
-		"prefix": "md",
-		"body": "@include media-max($1) {\n\t$2\n}"
-	},
-	"@media Min Width Desktop": {
-		"prefix": "mmd1",
-		"body": "@include media-min(\\$desktop) {\n\t$0\n}"
-	},
-	"@media Max Width Desktop": {
-		"prefix": "md1",
-		"body": "@include media-max(\\$desktop) {\n\t$0\n}"
-	},
-	"@media Min Width Laptop": {
-		"prefix": "mmd2",
-		"body": "@include media-min(\\$laptop) {\n\t$0\n}"
-	},
-	"@media Max Width Laptop": {
-		"prefix": "md2",
-		"body": "@include media-max(\\$laptop) {\n\t$0\n}"
-	},
-	"@media Min Width Tablet": {
-		"prefix": "mmd3",
-		"body": "@include media-min(\\$tablet) {\n\t$0\n}"
-	},
-	"@media Max Width Tablet": {
-		"prefix": "md3",
-		"body": "@include media-max(\\$tablet) {\n\t$0\n}"
-	},
-	"@media Min Width Phone": {
-		"prefix": "mmd4",
-		"body": "@include media-min(\\$phone) {\n\t$0\n}"
-	},
-	"@media Max Width Phone": {
-		"prefix": "md4",
-		"body": "@include media-max(\\$phone) {\n\t$0\n}"
-	},
-	"Transition And Hover": {
-		"prefix": "hhv",
-		"body": "transition: ${1:all} 0.${2:3}s;\n\n@include media-hover {\n\t$4\n}"
-	},
-	"Hover Decoration Underline": {
-		"prefix": "hvu",
-		"body": "@include media-hover {\n\ttext-decoration: underline;\n}"
-	},
-	"Hover Decoration None": {
-		"prefix": "hvn",
-		"body": "@include media-hover {\n\ttext-decoration: none;\n}"
-	},
-	"Hover": {
-		"prefix": "hh",
-		"body": "@media (any-hover: hover) {\n\t$1\n}"
-	},
-	"Prefers Reduced Motion Reduce": {
-		"prefix": "prmr",
-		"body": "@include media-motion(reduce) {\n\t$0\n}"
-	},
-	"Prefers Reduced Motion No Preferences": {
-		"prefix": "prmn",
-		"body": "@include media-motion(no-preference) {\n\t$0\n}"
-	},
-	"Extend List Counter": {
+	// Extends
+  "Extend: List Counter": {
+		"scope": "scss",
 		"prefix": "elc",
 		"body": "@extend %list-counter;"
 	},
-	"Extend Gray Filter": {
+	"Extend: Gray Filter": {
+		"scope": "scss",
 		"prefix": "egf",
 		"body": "@extend %gray-filter;"
 	},
-	"Extend Hide Scroll": {
+	"Extend: Hide Scroll": {
+		"scope": "scss",
 		"prefix": "ehs",
 		"body": "@extend %hide-scroll;"
 	},
-	"Extend User Select": {
-		"prefix": "eus",
-		"body": "@extend %select-none;"
+	"Extend: User Select None": {
+		"scope": "scss",
+		"prefix": "eusn",
+		"body": "@extend %user-select-none;"
 	},
-	"Extend Mirror": {
+	"Extend: Mirror": {
+		"scope": "scss",
 		"prefix": "emir",
 		"body": "@extend %mirror;"
 	},
-	"Extend Touch": {
+	"Extend: Touch": {
+		"scope": "scss",
 		"prefix": "ess",
-		"body": "@extend %touch;"
+		"body": "@extend %smooth-scroll;"
 	},
-	"Em": {
-		"prefix": "em",
+	// Mixins
+	"Mixin: Gradient Text (custom)": {
+		"scope": "scss",
+		"prefix": "mtg",
+		"body": "@include text-gradient($0);"
+	},
+	"Mixin: Truncate Text (custom)": {
+		"scope": "scss",
+		"prefix": "mtt",
+		"body": "@include truncate(${1:400}, ${2:text}, ${3:3}, ${4:1});"
+	},
+	"Mixin: Slide Animation (custom)": {
+		"scope": "scss",
+		"prefix": "msa",
+		"body": "@include slide(${1:5}, ${2:100}, ${3:1}, 0.${4:2}, ${5:top});"
+	},
+	"Mixin: Responsive Output (custom)": {
+		"scope": "scss",
+		"prefix": "mro",
+		"body": "@include responsive-output(${1:400}, ${2:\\$tablet}, ${3:0});"
+	},
+	"Mixin: Pseudo (custom)": {
+		"scope": "scss",
+		"prefix": "mp",
+		"body": "@include pseudo($0);"
+	},
+	"Mixin: Currency (ruble, custom)": {
+		"scope": "scss",
+		"prefix": "mcr",
+		"body": "@include currency(\"${0:₽}\");"
+	},
+	"Mixin: Grid Cards (custom)": {
+		"scope": "scss",
+		"prefix": "mgc",
+		"body": "@include grid(${1:fill}, to-rem(${2:290}), ${3:1fr}, ${4:\\$phone}) {\n\tgap: to-rem(${5:30});\n\tjustify-items: center;\n}"
+	},
+	"Mixin: Triangle (custom)": {
+		"scope": "scss",
+		"prefix": "mt",
+		"body": "@include triangle(var(--color-$1, #{\\$color-$2}), ${3:bottom}, ${4:10}, ${5:10}, ${6:10}, ${7:10}, ${8:absolute});"
+	},
+	"Mixin: Responsive Value (custom)": {
+		"scope": "scss",
+		"prefix": "mrv",
+		"body": "@include responsive-value(\"$1\", $2, $3);"
+	},
+	"Mixin: Responsive Value (font-size, custom)": {
+		"scope": "scss",
+		"prefix": "mrvfs",
+		"body": "@include responsive-value(\"font-size\", ${1:\\$font-size}, $2);"
+	},
+	"Mixin: Responsive Value (gap, custom)": {
+		"scope": "scss",
+		"prefix": "mrvg",
+		"body": "@include responsive-value(\"gap\", $1, $2);"
+	},
+	"Mixin: Responsive Value (margin, custom)": {
+		"scope": "scss",
+		"prefix": "mrvm",
+		"body": "@include responsive-value(\"margin\", $1, $2);"
+	},
+	"Mixin: Responsive Value (margin-block-start, custom)": {
+		"scope": "scss",
+		"prefix": "mrvmbs",
+		"body": "@include responsive-value(\"margin-block-start\", $1, $2);"
+	},
+	"Mixin: Responsive Value (margin-block-end, custom)": {
+		"scope": "scss",
+		"prefix": "mrvmbe",
+		"body": "@include responsive-value(\"margin-block-end\", $1, $2);"
+	},
+	"Mixin: Responsive Value (margin-inline-start, custom)": {
+		"scope": "scss",
+		"prefix": "mrvmis",
+		"body": "@include responsive-value(\"margin-inline-start\", $1, $2);"
+	},
+	"Mixin: Responsive Value (margin-inline-end, custom)": {
+		"scope": "scss",
+		"prefix": "mrvmie",
+		"body": "@include responsive-value(\"margin-inline-end\", $1, $2);"
+	},
+	"Mixin: Responsive Value (block-size, custom)": {
+		"scope": "scss",
+		"prefix": "mrvbs",
+		"body": "@include responsive-value(\"block-size\", $1, $2);"
+	},
+	"Mixin: Responsive Value (inline-size, custom)": {
+		"scope": "scss",
+		"prefix": "mrvis",
+		"body": "@include responsive-value(\"inline-size\", $1, $2);"
+	},
+	"Mixin: Responsive Value (padding, custom)": {
+		"scope": "scss",
+		"prefix": "mrvp",
+		"body": "@include responsive-value(\"padding\", $1, $2);"
+	},
+	"Mixin: Responsive Value (padding-block-start, custom)": {
+		"scope": "scss",
+		"prefix": "mrvpbs",
+		"body": "@include responsive-value(\"padding-block-start\", $1, $2);"
+	},
+	"Mixin: Responsive Value (padding-block-end, custom)": {
+		"scope": "scss",
+		"prefix": "mrvpbe",
+		"body": "@include responsive-value(\"padding-block-end\", $1, $2);"
+	},
+	"Mixin: Responsive Value (padding-inline-start, custom)": {
+		"scope": "scss",
+		"prefix": "mrvpis",
+		"body": "@include responsive-value(\"padding-inline-start\", $1, $2);"
+	},
+	"Mixin: Responsive Value (padding-inline-end, custom)": {
+		"scope": "scss",
+		"prefix": "mrvpie",
+		"body": "@include responsive-value(\"padding-inline-end\", $1, $2);"
+	},
+	// Media queries
+	"Mixin: @media Max Width And Min Width (custom)": {
+		"scope": "scss",
+		"prefix": "mmmd",
+		"body": "@include media-min-max($1, $2) {\n\t$3\n}"
+	},
+	"Mixin: @media min (custom)": {
+		"scope": "scss",
+		"prefix": "mmd",
+		"body": "@include media-min($1) {\n\t$2\n}"
+	},
+	"Mixin: @media max (custom)": {
+		"scope": "scss",
+		"prefix": "md",
+		"body": "@include media-max($1) {\n\t$2\n}"
+	},
+	"Mixin: @media Min Width ($desktop, custom)": {
+		"scope": "scss",
+		"prefix": "mmd1",
+		"body": "@include media-min(\\$desktop) {\n\t$0\n}"
+	},
+	"Mixin: @media Max Width ($desktop, custom)": {
+		"scope": "scss",
+		"prefix": "md1",
+		"body": "@include media-max(\\$desktop) {\n\t$0\n}"
+	},
+	"Mixin: @media Min Width ($laptop, custom)": {
+		"scope": "scss",
+		"prefix": "mmd2",
+		"body": "@include media-min(\\$laptop) {\n\t$0\n}"
+	},
+	"Mixin: @media Max Width ($laptop, custom)": {
+		"scope": "scss",
+		"prefix": "md2",
+		"body": "@include media-max(\\$laptop) {\n\t$0\n}"
+	},
+	"Mixin: @media Min Width ($tablet, custom)": {
+		"scope": "scss",
+		"prefix": "mmd3",
+		"body": "@include media-min(\\$tablet) {\n\t$0\n}"
+	},
+	"Mixin: @media Max Width ($tablet, custom)": {
+		"scope": "scss",
+		"prefix": "md3",
+		"body": "@include media-max(\\$tablet) {\n\t$0\n}"
+	},
+	"Mixin: @media Min Width ($phone, custom)": {
+		"scope": "scss",
+		"prefix": "mmd4",
+		"body": "@include media-min(\\$phone) {\n\t$0\n}"
+	},
+	"Mixin: @media Max Width ($phone, custom)": {
+		"scope": "scss",
+		"prefix": "mmd4",
+		"body": "@include media-max(\\$phone) {\n\t$0\n}"
+	},
+	// Media hover
+	"Mixin: Hover With Transition (all, 300ms, custom)": {
+		"scope": "scss",
+		"prefix": "mht",
+		"body": "transition: ${1:all} ${2:300}ms;\n\n@include media-hover {\n\t$3\n}"
+	},
+	"Mixin: Hover Decoration (underline)": {
+		"scope": "scss",
+		"prefix": "mhdu",
+		"body": "@include media-hover {\n\ttext-decoration: underline;\n}"
+	},
+	"Mixin: Hover Decoration (none)": {
+		"scope": "scss",
+		"prefix": "mhdn",
+		"body": "@include media-hover {\n\ttext-decoration: none;\n}"
+	},
+	"@media: Hover (custom)": {
+		"scope": "scss",
+		"prefix": "mah",
+		"body": "@media (any-hover: hover) {\n\t$0\n}"
+	},
+	// Media motion
+	"Mixin: Prefers Reduced Motion (reduce, custom)": {
+		"scope": "scss",
+		"prefix": "mprmr",
+		"body": "@include media-motion(reduce) {\n\t$0\n}"
+	},
+	"Mixin: Prefers Reduced Motion (no-preference, custom)": {
+		"scope": "scss",
+		"prefix": "mprmn",
+		"body": "@include media-motion(no-preference) {\n\t$0\n}"
+	},
+	// Functions
+	"Function: PX To EM (custom)": {
+		"scope": "scss",
+		"prefix": "fem",
 		"body": "to-em(${1:$2, $3})"
 	},
-	"Rem": {
-		"prefix": "rem",
+	"Function: PX To REM (custom)": {
+		"scope": "scss",
+		"prefix": "frem",
 		"body": "to-rem($0)"
 	},
-	"Percent": {
-		"prefix": "prc",
+	"Function: PX To Percent (custom)": {
+		"scope": "scss",
+		"prefix": "fptp",
 		"body": "to-percent($1, $2)"
 	},
-	"Aspect Ratio": {
-		"prefix": "asr",
-		"body": "aspect-ratio: 16 / 9;"
-	},
-	"Dark Theme": {
-		"prefix": "dt",
+	// Theme
+	"Theme: Dark (custom)": {
+		"scope": "scss",
+		"prefix": "td",
 		"body": ".dark & {\n\t$0\n}"
 	},
-	"Light Theme": {
-		"prefix": "lt",
+	"Theme: Light (custom)": {
+		"scope": "scss",
+		"prefix": "tl",
 		"body": ".ligth & {\n\t$0\n}"
 	},
-	"Font Family": {
+	// Font
+	"Font: Family (custom)": {
+		"scope": "scss",
 		"prefix": "ff",
 		"body": "font-family: var(--font-$1, #{\\$font-$2});"
 	},
-	"Letter Spacing With Em": {
-		"prefix": "lte",
-		"body": "letter-spacing: to-em($1, ${2:\\$font-size});"
-	},
-	"Font Size In Rem": {
-		"prefix": "fz",
-		"body": "\\$font-size: ${0:18};\n\nfont-size: to-rem(\\$font-size);"
-	},
-	"Gap With Rem ": {
-		"prefix": "gap",
-		"body": "gap: to-rem($0);"
-	},
-	"Flex Center": {
-		"prefix": "cf",
-		"body": "display: flex;\nflex-direction: column;\nalign-items: center;"
-	},
-	"Isolation": {
-		"prefix": "iso",
-		"body": "isolation: isolate;"
-	},
-	"Color Alpha": {
-		"prefix": "ca",
-		"body": "rgb(#${1:000} / 0.${2:5})"
-	},
-	"Divide": {
-		"prefix": "di",
-		"body": "div-rounding($1, $2)"
-	},
-	"Width In Rem": {
-		"prefix": "w",
-		"body": "inline-size: to-rem($0);"
-	},
-	"Height In Rem": {
-		"prefix": "h",
-		"body": "block-size: to-rem($0);"
-	},
-	"Margin Bottom In Em": {
-		"prefix": "mbe",
-		"body": "margin-block-end: to-em($1, $2);"
-	},
-	"Not Last-Child": {
-		"prefix": "nlc",
-		"body": "&:not(:last-child) {\n\t$0\n}"
-	},
-	"Margin Bottom Not Last-Child": {
-		"prefix": "mbl",
-		"body": "&:not(:last-child) {\n\tmargin-block-end: to-rem($0);\n}"
-	},
-	"Margin Bottom Not Last-Child In Em": {
-		"prefix": "mble",
-		"body": "&:not(:last-child) {\n\tmargin-block-end: to-em($1, ${2:\\$font-size});\n}"
-	},
-	"Last Child Margin": {
-		"prefix": "lcm",
-		"body": "&:last-child {\n\tmargin-block-start: to-rem(${1:0})\n\tmargin-block-end: to-rem(${3:0});\n\tmargin-inline-start: to-rem(${4:0});\n\tmargin-inline-end: to-rem(${2:0});\n}"
-	},
-	"Background Blur": {
-		"prefix": "br",
-		"body": "backdrop-filter: blur(to-rem($0));"
-	},
-	"Opacity": {
-		"prefix": "op",
-		"body": "opacity: ${0:0};"
-	},
-	"Line Height": {
-		"prefix": "lh",
+	"Font: Line Height (custom)": {
+		"scope": "scss",
+		"prefix": "flh",
 		"body": "line-height: div-rounding($1, ${2:\\$font-size});"
 	},
-	"Max Width": {
-		"prefix": "mw",
-		"body": "max-inline-size: to-rem($0);"
+	"Font: Letter Spacing (EM, custom)": {
+		"scope": "scss",
+		"prefix": "flse",
+		"body": "letter-spacing: to-em($1, ${2:\\$font-size});"
 	},
-	"Flex Basis In Percent": {
-		"prefix": "fbpp",
-		"body": "flex-grow: 0;\nflex-shrink: 0;\nflex-basis: to-percent($1, $2);"
+	"Font: Size (REM, custom)": {
+		"scope": "scss",
+		"prefix": "fsr",
+		"body": "\\$font-size: ${0:18};\n\nfont-size: to-rem(\\$font-size);"
 	},
-	"Filter": {
-		"prefix": "bfil",
-		"body": "position: relative;\n\n&::before {\n\t@include pseudo;\n\tinset: 0;\n\tbackground-color: rgb(#000 / 0.3);\n}"
-	},
-	"Padding In Rem": {
-		"prefix": "pp",
-		"body": "padding-block-start: to-rem(${1:0});\npadding-block-end: to-rem(${3:0});\npadding-inline-start: to-rem(${4:0});\npadding-inline-end: to-rem(${2:0});"
-	},
-	"Padding Rigth And Left In Rem": {
-		"prefix": "ppp",
-		"body": "padding-inline: to-rem($0);"
-	},
-	"Padding Top In Rem": {
-		"prefix": "ppt",
-		"body": "padding-block-start: to-rem($0);"
-	},
-	"Padding Bottom In Rem": {
-		"prefix": "ppb",
-		"body": "padding-block-end: to-rem($0);"
-	},
-	"Padding Left In Rem": {
-		"prefix": "ppl",
-		"body": "padding-inline-start: to-rem($0);"
-	},
-	"Padding Right In Rem": {
-		"prefix": "ppr",
-		"body": "padding-inline-end: to-rem($0);"
-	},
-	"Margin In Rem": {
-		"prefix": "mm",
-		"body": "margin-block-start: to-rem(${1:0});\nmargin-block-end: to-rem(${3:0});\nmargin-inline-start: to-rem(${4:0});\nmargin-inline-end: to-rem(${2:0});"
-	},
-	"Margin Left And Right In Rem": {
-		"prefix": "mmm",
-		"body": "margin-inline: to-rem($0);"
-	},
-	"Margin Left Auto": {
-		"prefix": "mr",
-		"body": "margin-inline-start: auto;"
-	},
-	"Margin Top In Rem": {
-		"prefix": "mmt",
-		"body": "margin-block-start: to-rem($0);"
-	},
-	"Margin Bottom In Rem": {
-		"prefix": "mmb",
-		"body": "margin-block-end: to-rem($0);"
-	},
-	"Margin Left In Rem": {
-		"prefix": "mml",
-		"body": "margin-inline-start: to-rem($0);"
-	},
-	"Margin Right In Rem": {
-		"prefix": "mmr",
-		"body": "margin-inline-end: to-rem($0);"
-	},
-	"Margin Inline Auto": {
-		"prefix": "mu",
-		"body": "margin-inline: auto;"
-	},
-	"Margin Auto": {
-		"prefix": "ma",
-		"body": "margin: auto;"
-	},
-	"Max Width None": {
-		"prefix": "mwn",
-		"body": "max-inline-size: none;"
-	},
-	"Position": {
-		"prefix": "ps",
-		"body": "position: ${absolute};\ninset: 0;"
-	},
-	"Direction": {
-		"prefix": "drt",
-		"body": "direction: rtl;"
-	},
-	"Border Radius 50%": {
-		"prefix": "br5",
-		"body": "border-radius: 50%;"
-	},
-	"Box Shadow": {
-		"prefix": "bs",
-		"body": "box-shadow: ${1:0} ${2:0} to-rem(${3:0}) rgb(#000 / 0.${4:3});"
-	},
-	"Width Auto": {
-		"prefix": "wa",
-		"body": "inline-size: auto;"
-	},
-	"Height Auto": {
-		"prefix": "ha",
-		"body": "block-size: auto;"
-	},
-	"Animation": {
-		"prefix": "an",
-		"body": "animation: ${1:name} ${2:1}s ${3:infinite} ${4:linear};"
-	},
-	"Transition": {
-		"prefix": "ta",
-		"body": "transition: ${1:all} 0.${2:3}s;"
-	},
-	"Transform Rotate": {
-		"prefix": "tr",
-		"body": "transform: rotate(-${0:180}deg);"
-	},
-	"Transform Scale": {
-		"prefix": "ts",
-		"body": "transform: scale(${0:1});"
-	},
-	"Transform Translate": {
-		"prefix": "tt",
-		"body": "transform: translate(-50%, -50%);"
-	},
-	"Transform All": {
-		"prefix": "tal",
-		"body": "transform: translate(-50%, -50%) rotate(${3:0}deg) scale(${4:1}) skew(${5:0}, ${6:0});"
-	},
-	"Last Child": {
-		"prefix": "lc",
-		"body": "&:last-child {\n\t$0\n}"
-	},
-	"Nth Child": {
-		"prefix": "nc",
-		"body": "&:nth-child($1) {\n\t$2\n}"
-	},
-	"First Child": {
-		"prefix": "fc",
-		"body": "&:first-child {\n\t$0\n}"
-	},
-	"Before And after": {
-		"prefix": "ba",
-		"body": "position: relative;\n\n&::before,\n&::after {\n\t@include pseudo;\n\t$0\n}"
-	},
-	"After": {
-		"prefix": "a",
-		"body": "position: relative;\n\n&::after {\n\t@include pseudo;\n\t$0\n}"
-	},
-	"Before": {
-		"prefix": "b",
-		"body": "position: relative;\n\n&::before {\n\t@include pseudo;\n\t$0\n}"
-	},
-	"Pseudo Class Active": {
-		"prefix": "acc",
-		"body": "&:active {\n\t$0\n}"
-	},
-	"Pseudo Class Focus Visible": {
-		"prefix": "foc",
-		"body": "&:focus-visible {\n\t$0\n}"
-	},
-	"Pseudo Element Placeholder": {
-		"prefix": "pl",
-		"body": "&::placeholder {\n\t$0\n}"
-	},
-	"Active Class": {
-		"prefix": "ac",
-		"body": "&.active {\n\t$0\n}"
-	},
-	"Background": {
-		"prefix": "bg+",
-		"body": "background-image: url(\"@img$0\");\nbackground-position-y: 0;\nbackground-position-x: 0;\nnbackground-size: cover;\nbackground-repeat: no-repeat;"
-	},
-	"Justify Content": {
-		"prefix": "fbs",
-		"body": "justify-content: space-${0:between};"
-	},
-	"Align items": {
-		"prefix": "aic",
-		"body": "align-items: center;"
-	},
-	"Flex Row": {
-		"prefix": "dfr",
-		"body": "display: flex;\nflex-wrap: wrap;\nalign-items: center;"
-	},
-	"Flex Column": {
-		"prefix": "dfc",
+  // Flex
+	"Flex: Column (center)": {
+		"scope": "scss",
+		"prefix": "fcc",
 		"body": "display: flex;\nflex-direction: column;\nalign-items: center;"
 	},
-	"Flex wrap": {
-		"prefix": "fbw",
-		"body": "flex-wrap: ${no}wrap;"
+	"Flex: Row (wrap, center)": {
+		"scope": "scss",
+		"prefix": "frwc",
+		"body": "display: flex;\nflex-wrap: wrap;\nalign-items: center;"
 	},
-	"Flex Direction Column": {
-		"prefix": "fbd",
+	"Flex: Wrap (wrap, custom)": {
+		"scope": "scss",
+		"prefix": "fw",
+		"body": "flex-wrap: $0wrap;"
+	},
+	"Flex: Direction (column)": {
+		"scope": "scss",
+		"prefix": "fdc",
 		"body": "flex-direction: column;"
 	},
-	"Flex Basis 100%": {
-		"prefix": "fbg",
-		"body": "flex: 1;"
+  "Flex: Justify Content (space-between, custom)": {
+		"scope": "scss",
+		"prefix": "fjcsb",
+		"body": "justify-content: space-${0:between};"
 	},
-	"Flex Basis 50%": {
-		"prefix": "fbgh",
-		"body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: 50%;"
+	"Flex: Align Items (center)": {
+		"scope": "scss",
+		"prefix": "faic",
+		"body": "align-items: center;"
 	},
-	"Flex Basis 33%": {
-		"prefix": "fbgt",
-		"body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: 33%;"
+	"Flex: Center": {
+		"scope": "scss",
+		"prefix": "fc",
+		"body": "justify-content: center;\nalign-items: center;"
 	},
-	"Flex Basis 25%": {
-		"prefix": "fbgq",
-		"body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: 25%;"
-	},
-	"Flex Basis With Rem": {
+	"Flex: Basis (REM, custom)": {
+		"scope": "scss",
 		"prefix": "fbr",
 		"body": "flex-basis: to-rem($0);"
 	},
-	"Flex": {
+	"Flex: Basis (percent, custom)": {
+		"scope": "scss",
+		"prefix": "fbp",
+		"body": "flex-grow: 0;\nflex-shrink: 0;\nflex-basis: to-percent($1, $2);"
+	},
+	"Flex: Basis (100%)": {
+		"scope": "scss",
+		"prefix": "fb1",
+		"body": "flex: 1;"
+	},
+	"Flex: Basis (50%)": {
+		"scope": "scss",
+		"prefix": "fbh",
+		"body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: 50%;"
+	},
+	"Flex: Basis (33%)": {
+		"scope": "scss",
+		"prefix": "fbt",
+		"body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: 33%;"
+	},
+	"Flex: Basis (25%)": {
+		"scope": "scss",
+		"prefix": "fbq",
+		"body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: 25%;"
+	},
+	"Flex: Basis (custom)": {
+		"scope": "scss",
 		"prefix": "fb",
 		"body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: $0;"
 	},
-	"Flex Center": {
-		"prefix": "fbc",
-		"body": "justify-content: center;\nalign-items: center;"
+  // Margin
+	"Margin (REM, custom)": {
+		"scope": "scss",
+		"prefix": "mr",
+		"body": "margin-block-start: to-rem(${1:0});\nmargin-block-end: to-rem(${2:0});\nmargin-inline-start: to-rem(${3:0});\nmargin-inline-end: to-rem(${4:0});"
 	},
-	"Key Frames": {
+	"Margin: Block (REM, custom)": {
+		"scope": "scss",
+		"prefix": "mbr",
+		"body": "margin-block: to-rem($0);"
+	},
+	"Margin: Block Start (REM, custom)": {
+		"scope": "scss",
+		"prefix": "mbsr",
+		"body": "margin-block-start: to-rem($0);"
+	},
+	"Margin: Block End (REM, custom)": {
+		"scope": "scss",
+		"prefix": "mber",
+		"body": "margin-block-end: to-rem($0);"
+	},
+	"Margin: Inline (REM, custom)": {
+		"scope": "scss",
+		"prefix": "mir",
+		"body": "margin-inline: to-rem($0);"
+	},
+	"Margin: Inline Start (REM, custom)": {
+		"scope": "scss",
+		"prefix": "misr",
+		"body": "margin-inline-start: to-rem($0);"
+	},
+	"Margin: Inline End (REM, custom)": {
+		"scope": "scss",
+		"prefix": "mier",
+		"body": "margin-inline-end: to-rem($0);"
+	},
+	"Margin: Inline (auto)": {
+		"scope": "scss",
+		"prefix": "mia",
+		"body": "margin-inline: auto;"
+	},
+	// Block Sizes
+	"Size: Block (REM, custom)": {
+		"scope": "scss",
+		"prefix": "sbr",
+		"body": "block-size: to-rem($0);"
+	},
+  "Size: Inline (REM, custom)": {
+		"scope": "scss",
+		"prefix": "sir",
+		"body": "inline-size: to-rem($0);"
+	},
+	"Size: Max Inline (REM, custom)": {
+		"scope": "scss",
+		"prefix": "smir",
+		"body": "max-inline-size: to-rem($0);"
+	},
+	"Size: Max Inline (none)": {
+		"scope": "scss",
+		"prefix": "smin",
+		"body": "max-inline-size: none;"
+	},
+	// Padding
+  "Padding (REM, custom)": {
+		"scope": "scss",
+		"prefix": "pr",
+		"body": "padding-block-start: to-rem(${1:0});\npadding-block-end: to-rem(${2:0});\npadding-inline-start: to-rem(${3:0});\npadding-inline-end: to-rem(${4:0});"
+	},
+	"Padding: Block (REM, custom)": {
+		"scope": "scss",
+		"prefix": "pbr",
+		"body": "padding-block: to-rem($0);"
+	},
+	"Padding: Block Start (REM, custom)": {
+		"scope": "scss",
+		"prefix": "pbsr",
+		"body": "padding-block-start: to-rem($0);"
+	},
+	"Padding: Block End (REM, custom)": {
+		"scope": "scss",
+		"prefix": "pber",
+		"body": "padding-block-end: to-rem($0);"
+	},
+	"Padding: Inline (REM, custom)": {
+		"scope": "scss",
+		"prefix": "pir",
+		"body": "padding-inline: to-rem($0);"
+	},
+	"Padding: Inline Start (REM, custom)": {
+		"scope": "scss",
+		"prefix": "pisr",
+		"body": "padding-inline-start: to-rem($0);"
+	},
+	"Padding: Inline End (REM, custom)": {
+		"scope": "scss",
+		"prefix": "pier",
+		"body": "padding-inline-end: to-rem($0);"
+	},
+
+	// Childs
+
+
+
+
+	"Aspect Ratio (16/9)": {
+		"scope": "scss",
+		"prefix": "asr",
+		"body": "aspect-ratio: 16 / 9;"
+	},
+	"Gap (REM, custom)": {
+		"scope": "scss",
+		"prefix": "gap",
+		"body": "gap: to-rem($0);"
+	},
+	"Isolation (isolate)": {
+		"scope": "scss",
+		"prefix": "iso",
+		"body": "isolation: isolate;"
+	},
+	"Color (alpha, custom)": {
+		"scope": "scss",
+		"prefix": "ca",
+		"body": "rgb(var(--color-${1:primary}-rgb, #{\\$color-${1:primary}-rgb}) / 0.${2:5})"
+	},
+	"Divide (custom)": {
+		"scope": "scss",
+		"prefix": "di",
+		"body": "div-rounding($1, $2)"
+	},
+	"Not Last-Child (custom)": {
+		"scope": "scss",
+		"prefix": "nlc",
+		"body": "&:not(:last-child) {\n\t$0\n}"
+	},
+	"Margin: Block End Not Last-Child (custom)": {
+		"scope": "scss",
+		"prefix": "mbl",
+		"body": "&:not(:last-child) {\n\tmargin-block-end: to-rem($0);\n}"
+	},
+	"Margin: Block End Not Last-Child (EM, custom)": {
+		"scope": "scss",
+		"prefix": "mble",
+		"body": "&:not(:last-child) {\n\tmargin-block-end: to-em($1, ${2:\\$font-size});\n}"
+	},
+	"Last Child (margin, custom)": {
+		"scope": "scss",
+		"prefix": "lcm",
+		"body": "&:last-child {\n\tmargin-block-start: to-rem(${1:0})\n\tmargin-block-end: to-rem(${2:0});\n\tmargin-inline-start: to-rem(${3:0});\n\tmargin-inline-end: to-rem(${4:0});\n}"
+	},
+	"Backdrop Filter (blur, custom)": {
+		"scope": "scss",
+		"prefix": "br",
+		"body": "backdrop-filter: blur(to-rem($0));"
+	},
+	"Opacity (custom)": {
+		"scope": "scss",
+		"prefix": "op",
+		"body": "opacity: ${0:0};"
+	},
+	"Filter (custom)": {
+		"scope": "scss",
+		"prefix": "bfil",
+		"body": "position: relative;\n\n&::before {\n\t@include pseudo;\n\tinset: 0;\n\tbackground-color: rgb(var(--color-${0:primary}-rgb, #{\\$color-${0:primary}-rgb}) / 0.3);\n}"
+	},
+	"Position (custom)": {
+		"scope": "scss",
+		"prefix": "ps",
+		"body": "position: ${0:absolute};\ninset: 0;"
+	},
+	"Direction (rtl, custom)": {
+		"scope": "scss",
+		"prefix": "drt",
+		"body": "direction: ${0:rtl};"
+	},
+	"Border Radius 50%": {
+		"scope": "scss",
+		"prefix": "br5",
+		"body": "border-radius: 50%;"
+	},
+	"Box Shadow (custom)": {
+		"scope": "scss",
+		"prefix": "bs",
+		"body": "box-shadow: ${1:0} ${2:0} to-rem(${3:0}) rgb(var(--color-${4:primary}-rgb, #{\\$color-${4:primary}-rgb}) / 0.${5:3});"
+	},
+	"Animation (custom)": {
+		"scope": "scss",
+		"prefix": "an",
+		"body": "animation: ${1:name} ${2:1}s ${3:infinite} ${4:linear};"
+	},
+	"Transition (all, 300ms, custom)": {
+		"scope": "scss",
+		"prefix": "ta",
+		"body": "transition: ${1:all} ${2:300}ms;"
+	},
+	"Transform (rotate, custom)": {
+		"scope": "scss",
+		"prefix": "tr",
+		"body": "transform: rotate(-${0:180}deg);"
+	},
+	"Transform (scale, custom)": {
+		"scope": "scss",
+		"prefix": "ts",
+		"body": "transform: scale(${0:1});"
+	},
+	"Transform (translate(-50%))": {
+		"scope": "scss",
+		"prefix": "tt",
+		"body": "transform: translate(-50%, -50%);"
+	},
+	"Transform (custom)": {
+		"scope": "scss",
+		"prefix": "tal",
+		"body": "transform: translate(-50%, -50%) rotate(${1:0}deg) scale(${2:1}) skew(${3:0}, ${4:0});"
+	},
+	"Last Child (custom)": {
+		"scope": "scss",
+		"prefix": "lc",
+		"body": "&:last-child {\n\t$0\n}"
+	},
+	"Nth Child (custom)": {
+		"scope": "scss",
+		"prefix": "nc",
+		"body": "&:nth-child($1) {\n\t$2\n}"
+	},
+	"First Child (custom)": {
+		"scope": "scss",
+		"prefix": "pfc",
+		"body": "&:first-child {\n\t$0\n}"
+	},
+	"Before And after (custom)": {
+		"scope": "scss",
+		"prefix": "ba",
+		"body": "position: relative;\n\n&::before,\n&::after {\n\t@include pseudo;\n\t$0\n}"
+	},
+	"After (custom)": {
+		"scope": "scss",
+		"prefix": "a",
+		"body": "position: relative;\n\n&::after {\n\t@include pseudo;\n\t$0\n}"
+	},
+	"Before (custom)": {
+		"scope": "scss",
+		"prefix": "b",
+		"body": "position: relative;\n\n&::before {\n\t@include pseudo;\n\t$0\n}"
+	},
+	"Pseudo Class (active, custom)": {
+		"scope": "scss",
+		"prefix": "pca",
+		"body": "&:active {\n\t$0\n}"
+	},
+	"Pseudo Class (focus-visible, custom)": {
+		"scope": "scss",
+		"prefix": "pcfo",
+		"body": "&:focus-visible {\n\t$0\n}"
+	},
+	"Pseudo Element (placeholder, custom)": {
+		"scope": "scss",
+		"prefix": "pepl",
+		"body": "&::placeholder {\n\t$0\n}"
+	},
+	"Active Class (custom)": {
+		"scope": "scss",
+		"prefix": "ac",
+		"body": "&.active {\n\t$0\n}"
+	},
+	"Background Image (custom)": {
+		"scope": "scss",
+		"prefix": "bg+",
+		"body": "background-image: url(\"@img$0\");\nbackground-position-y: 0;\nbackground-position-x: 0;\nnbackground-size: cover;\nbackground-repeat: no-repeat;"
+	},
+	"Key Frames (custom)": {
+		"scope": "scss",
 		"prefix": "kf",
 		"body": "@keyframes ${1:name} {\n\t0% {\n\t\t$2\n\t}\n\t100% {\n\t\t$3\n\t}\n}"
 	},
-	"White Space": {
+	"White Space (nowrap)": {
+		"scope": "scss",
 		"prefix": "wsnw",
-		"body": "white-space: ${no}wrap;"
+		"body": "white-space: nowrap;"
 	}
 }
