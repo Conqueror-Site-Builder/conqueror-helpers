@@ -1,44 +1,77 @@
 {
+	// Imports
 	"Import Package": {
-		"prefix": "imp",
+		"prefix": "i",
 		"body": "import ${1:packageName} from '${2:packageName}'"
 	},
+	// Listeners
   "Event Listener": {
-    "prefix": "ael",
+    "prefix": "el",
     "body": "${1:document}.addEventListener('${2:event}', (event) => {\n\t$3\n})"
   },
   "Click Event Listener": {
-    "prefix": "aelc",
+    "prefix": "elc",
     "body": "${1:document}.addEventListener('click', (event) => {\n\t$2\n})"
   },
+	// Queries
+  "Const Query All": {
+		"prefix": "qa",
+    "body": "const ${1:elements} = document.querySelectorAll('${2:element}')"
+  },
+	"Const Query": {
+		"prefix": "q",
+		"body": "const ${1:element} = document.querySelector('${2:element}')"
+	},
+	// Consts
+	"Empty Const": {
+		"prefix": "ec",
+		"body": "const ${1:element} = $2"
+	},
 	"Target Element": {
 		"prefix": "te",
 		"body": "const targetElement = event.target"
 	},
-  "Const With An Array Of Elemenets": {
-    "prefix": "cqa",
-    "body": "const ${1:elements} = document.querySelectorAll('${2:element}')"
-  },
-	"Const With Element": {
-		"prefix": "cq",
-		"body": "const ${1:element} = document.querySelector('${2:element}')"
+	// Functions and methods
+	"Functional Expression": {
+		"prefix": "cf",
+		"body": "const ${1:functionName} = (${2:arguments}) => {\n\t$3\n}"
 	},
-	"Empty Const": {
-		"prefix": "ec",
-		"body": "const ${1:name} = ${2:content}"
+	"Method": {
+		"prefix": "m",
+		"body": "${1:methodName}(${2:arguments}) {\n\t$3\n}"
 	},
-  "Add A Class": {
+	"Anonymous Function": {
+		"prefix": "af",
+		"body": "(${1:arguments}) => {\n\t$2\n}"
+	},
+	// Loops
+	"For Each": {
+		"prefix": "fe",
+		"body": "${1:array}.forEach((${2:item}) => {\n\t$3\n})"
+	},
+	// Time
+	"Set Interval": {
+		"prefix": "si",
+		"body": "setInterval(($1) => {\n\t$2\n}, ${3:0})"
+	},
+	"Set Timeout": {
+		"prefix": "st",
+		"body": "setTimeout(($1) => {\n\t$2\n}, ${3:0})"
+	},
+	// Class Operations
+  "Add Class": {
 		"prefix": "ac",
-    "body": "${1:element}.classList.add('${2:class}')"
+    "body": "${1:element}.classList.add('${2:className}')"
   },
-  "Toggle A Class": {
+  "Toggle Class": {
     "prefix": "tc",
-    "body": "${1:element}.classList.toggle('${2:class}')"
+    "body": "${1:element}.classList.toggle('${2:className}')"
   },
-  "Remove A Class": {
+  "Remove Class": {
     "prefix": "rc",
-    "body": "${1:element}.classList.remove('${2:class}')"
+    "body": "${1:element}.classList.remove('${2:className}')"
   },
+	// Attribute Operations
   "Set Attribute": {
     "prefix": "sa",
     "body": "${1:element}.setAttribute('${2:attributeName}', ${3:value})"
@@ -47,52 +80,30 @@
     "prefix": "ra",
     "body": "${1:element}.removeAttribute('${2:attributeName}')"
   },
-  "Get An Attribute": {
+  "Get Attribute": {
     "prefix": "ga",
     "body": "${1:element}.dataset.${2:attributeName}"
   },
-  "Insert Adjacent HTML": {
+	// Insert
+	"Insert Adjacent HTML": {
 		"prefix": "iah",
-    "body": "${1:element}.insertAdjacentHTML('beforeend', '${2:template}')"
-  },
-  "For Each": {
-		"prefix": "fe",
-    "body": "${1:array}.forEach((${2:item}) => {\n\t$3\n})"
-  },
-	"Functional Expression": {
-		"prefix": "cf",
-		"body": "const ${1:functionName} = (${2:arguments}) => {\n\t$3\n}"
+		"body": "${1:element}.insertAdjacentHTML('beforeend', $2)"
 	},
-	"Function As A Property Of An Object": {
-		"prefix": "of",
-		"body": "${1:methodName}(${2:arguments}) {\n\t$3\n}"
-	},
-  "Anonymous Function": {
-    "prefix": "af",
-    "body": "(${1:arguments}) => {\n\t$2\n}"
-  },
-  "Set Interval": {
-    "prefix": "si",
-    "body": "setInterval(($1) => {\n\t$2\n}, ${3:0})"
-  },
-  "Set Timeout": {
-    "prefix": "st",
-    "body": "setTimeout(($1) => {\n\t$2\n}, ${3:0})"
-  },
-  "Json Parse": {
-    "prefix": "jp",
-    "body": "JSON.parse($object)"
-  },
-  "Json Stringify": {
-    "prefix": "js",
-    "body": "JSON.stringify($object)"
-  },
 	"Text Content": {
 		"prefix": "tco",
-    "body": "${1:element}.textContent = '${2:content}'"
+    "body": "${1:element}.textContent = $2"
   },
   "Inner HTML": {
-    "prefix": "ih",
-    "body": "${1:element}.innerHTML = '${2:element}'"
-  }
+		"prefix": "ih",
+    "body": "${1:element}.innerHTML = $2"
+  },
+	// JSON
+	"Json Parse": {
+		"prefix": "jp",
+		"body": "JSON.parse($0)"
+	},
+	"Json Stringify": {
+		"prefix": "js",
+		"body": "JSON.stringify($0)"
+	}
 }
