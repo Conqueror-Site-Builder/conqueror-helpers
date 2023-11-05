@@ -1,467 +1,387 @@
 {
-	"Data Date Picker": {
+	// Data attributes
+	"Data: Date Picker": {
 		"scope": "jade",
 		"prefix": "ddp",
 		"body": "data-datepicker"
 	},
-	"Data Placeholder No Hidden": {
+	"Data: Placeholder Unhidden": {
 		"scope": "jade",
-		"prefix": "dpnh",
+		"prefix": "dpu",
 		"body": "data-placeholder-unhidden"
 	},
-	"Data Error": {
+	"Data: Error (custom)": {
 		"scope": "jade",
-		"prefix": "derr",
-		"body": "data-error='$error'"
+		"prefix": "de",
+		"body": "data-error='$0'"
 	},
-	"Data Filter": {
+	"Data: Filter (custom)": {
 		"scope": "jade",
-		"prefix": "dftr",
-		"body": "data-filter='${*}'"
+		"prefix": "df",
+		"body": "data-filter='${0:*}'"
 	},
-	"Data Slider With Mouse Control": {
-		"scope": "jade",
-		"prefix": "dms",
-		"body": "data-mousemove-swipe"
-	},
-	"Data Quantity Max": {
-		"scope": "jade",
-		"prefix": "dqmax",
-		"body": "data-quantity-max='$0'"
-	},
-	"Data Quantity Min": {
+	"Data: Quantity Min (custom)": {
 		"scope": "jade",
 		"prefix": "dqmin",
 		"body": "data-quantity-min='$0'"
 	},
-	"Data Ripple Effect": {
+	"Data: Quantity Max (custom)": {
 		"scope": "jade",
-		"prefix": "drip",
+		"prefix": "dqmax",
+		"body": "data-quantity-max='$0'"
+	},
+	"Data: Ripple Effect (custom)": {
+		"scope": "jade",
+		"prefix": "dre",
 		"body": "data-ripple${0:='once'}"
 	},
-	"Data Digits Counter": {
+	"Data: Digits Counter (custom)": {
 		"scope": "jade",
 		"prefix": "ddc",
 		"body": "data-digits-counter='${0:1000}'"
 	},
-	"Data Typed": {
+	"Data: Typed": {
 		"scope": "jade",
 		"prefix": "dt",
 		"body": "data-typed"
 	},
-	"Data Tooltip": {
+	"Data: Tooltip (custom)": {
 		"scope": "jade",
-		"prefix": "dtc",
+		"prefix": "dtt",
 		"body": "data-tippy-content${1:='${2:Tip}'}"
 	},
-	"Data Required": {
+	"Data: Required (custom)": {
 		"scope": "jade",
 		"prefix": "dr",
 		"body": "data-required${1:='${2:email}'}"
 	},
-	"Data Dynamic Adapt": {
-		"scope": "jade",
-		"prefix": "da",
-		"body": "data-da='.${1:block}, ${2:768}'"
-	},
-	"Data Popup": {
+	"Data: Popup (custom)": {
 		"scope": "jade",
 		"prefix": "dp",
-		"body": "data-popup='#$block'"
+		"body": "data-popup='#$0'"
 	},
-	"Data Youtube": {
+	"Data: Popup Youtube (custom)": {
 		"scope": "jade",
 		"prefix": "dpy",
 		"body": "data-popup-youtube='$0'"
 	},
-	"Data Youtube Place": {
+	"Data: Popup Youtube Place": {
 		"scope": "jade",
 		"prefix": "dpyp",
 		"body": "data-popup-youtube-place"
 	},
-	"Data No Focus Classes": {
+	"Data: No Focus Classes": {
 		"scope": "jade",
 		"prefix": "dnfc",
 		"body": "data-no-focus-classes"
 	},
-	"Data Validate": {
+	"Data: Validate": {
 		"scope": "jade",
 		"prefix": "dv",
 		"body": "data-validate"
 	},
-	"Data No Validate": {
+	"Data: No Validate": {
 		"scope": "jade",
 		"prefix": "dnv",
 		"body": "data-no-validate"
 	},
-	"Data Ajax": {
+	"Data: Ajax": {
 		"scope": "jade",
 		"prefix": "daj",
 		"body": "data-ajax"
 	},
-	"Data Goto Error": {
+	"Data: Goto Error": {
 		"scope": "jade",
 		"prefix": "dge",
 		"body": "data-goto-error"
 	},
-	"Data Popup Message": {
+	"Data: Popup Message (custom)": {
 		"scope": "jade",
 		"prefix": "dpm",
-		"body": "data-popup-message='#$message'"
+		"body": "data-popup-message='#$0'"
 	},
-	"Data Goto": {
+	"Data: Goto (custom)": {
 		"scope": "jade",
 		"prefix": "dgt",
-		"body": "data-goto='.$class'"
+		"body": "data-goto='.$0'"
 	},
-	"Data Goto Header": {
+	"Data: Goto Header": {
 		"scope": "jade",
 		"prefix": "dgh",
 		"body": "data-goto-header"
 	},
-	"Data Goto Top": {
+	"Data: Goto Top (custom)": {
 		"scope": "jade",
 		"prefix": "dgtt",
 		"body": "data-goto-top='${0:10}'"
 	},
-	"Data Watch": {
-		"scope": "jade",
-		"prefix": "dw",
-		"body": "data-watch${0:='navigator'}"
-	},
-	"Data Scroll": {
+	"Data: Scroll (custom)": {
 		"scope": "jade",
 		"prefix": "ds",
 		"body": "data-scroll${1:='${2:120}'}"
 	},
-	"Data Scroll Show": {
+	"Data: Scroll Show (custom)": {
 		"scope": "jade",
 		"prefix": "dss",
 		"body": "data-scroll-show='${0:1000}'"
 	},
-	"data Watch Root": {
+	"Data: Watch (custom)": {
+		"scope": "jade",
+		"prefix": "dw",
+		"body": "data-watch${0:='navigator'}"
+	},
+	"data: Watch Root (custom)": {
 		"scope": "jade",
 		"prefix": "dwr",
-		"body": "data-watch-root='.$class'"
+		"body": "data-watch-root='.$0'"
 	},
-	"Data Watch Margin": {
+	"Data: Watch Margin (custom)": {
 		"scope": "jade",
 		"prefix": "dwm",
 		"body": "data-watch-margin='${0:10}px'"
 	},
-	"Data watch Threshold": {
+	"Data: watch Threshold (custom)": {
 		"scope": "jade",
 		"prefix": "dwt",
 		"body": "data-watch-threshold='0.${0:3}'"
 	},
-	"Data Watch Once": {
+	"Data: Watch Once": {
 		"scope": "jade",
 		"prefix": "dwo",
 		"body": "data-watch-once"
 	},
-	"Data Showmore Media": {
+	"Data: Showmore Media": {
 		"scope": "jade",
 		"prefix": "dsm",
 		"body": "data-showmore-media"
 	},
-	"Data Tabs Hash": {
+	"Data: Tabs Hash": {
 		"scope": "jade",
 		"prefix": "dth",
 		"body": "data-tabs-hash"
 	},
-	"Data Tabs Animate": {
+	"Data: Tabs Animate (custom)": {
 		"scope": "jade",
 		"prefix": "dta",
 		"body": "data-tabs-animate='${0:1000}'"
 	},
-	"Data Spoilers": {
+	"Data: Spoilers": {
 		"scope": "jade",
-		"prefix": "dsll",
+		"prefix": "dsls",
 		"body": "data-spoilers"
 	},
-	"Data Spoiler": {
-		"scope": "jade",
-		"prefix": "dsl",
-		"body": "data-spoiler"
-	},
-	"Data One Spoiler": {
+	"Data: One Spoiler": {
 		"scope": "jade",
 		"prefix": "dos",
 		"body": "data-one-spoiler"
 	},
-	"Data Spoilers Speed": {
+	"Data: Spoiler": {
+		"scope": "jade",
+		"prefix": "dsl",
+		"body": "data-spoiler"
+	},
+	"Data: Spoilers Speed (custom)": {
 		"scope": "jade",
 		"prefix": "dssl",
 		"body": "data-spoilers-speed='${0:1000}'"
 	},
-	"Data Parallax Mouse Wrapper": {
+	"Data: Parallax Mouse Wrapper": {
 		"scope": "jade",
-		"prefix": "dpmw",
+		"prefix": "dpxmw",
 		"body": "data-parallax-mouse-wrapper"
 	},
-	"Data Parallax Mouse": {
+	"Data: Parallax Mouse": {
 		"scope": "jade",
 		"prefix": "dpxm",
 		"body": "data-parallax-mouse"
 	},
-	"Data Parallax CX": {
+	"Data: Parallax CY (custom)": {
 		"scope": "jade",
-		"prefix": "dpcx",
-		"body": "data-parallax-cx='$0'"
-	},
-	"Data Parallax CY": {
-		"scope": "jade",
-		"prefix": "dpcy",
+		"prefix": "dpxcy",
 		"body": "data-parallax-cy='$0'"
 	},
-	"Data Parallax DXR": {
+	"Data: Parallax CX (custom)": {
 		"scope": "jade",
-		"prefix": "dpxr",
-		"body": "data-parallax-dxr"
+		"prefix": "dpxcx",
+		"body": "data-parallax-cx='$0'"
 	},
-	"data Parallax DYR": {
+	"data: Parallax DYR": {
 		"scope": "jade",
-		"prefix": "dpyr",
+		"prefix": "dpxyr",
 		"body": "data-parallax-dyr"
 	},
-	"Data Parallax A": {
+	"Data: Parallax DXR": {
+		"scope": "jade",
+		"prefix": "dpxxr",
+		"body": "data-parallax-dxr"
+	},
+	"Data: Parallax Animation (custom)": {
 		"scope": "jade",
 		"prefix": "dpxa",
 		"body": "data-parallax-a='${0:1000}'"
 	},
-	"Fullscreen Class": {
-		"scope": "jade",
-		"prefix": "fsc",
-		"body": "fullscreen"
-	},
-	"Data Gallery": {
+	"Data: Gallery": {
 		"scope": "jade",
 		"prefix": "dg",
 		"body": "data-gallery"
 	},
-	"Data Simplebar": {
+	"Data: Simplebar": {
 		"scope": "jade",
-		"prefix": "db",
+		"prefix": "dsb",
 		"body": "data-simplebar"
 	},
-	"Data Tags": {
+  // Class
+	"Class: Active": {
 		"scope": "jade",
-		"prefix": "dtag",
-		"body": "data-tags"
-	},
-	"Data Checkbox": {
-		"scope": "jade",
-		"prefix": "dcb",
-		"body": "data-checkbox"
-	},
-	"Data Show Selected": {
-		"scope": "jade",
-		"prefix": "dsel",
-		"body": "data-show-selected"
-	},
-	"Data Search": {
-		"scope": "jade",
-		"prefix": "dsearch",
-		"body": "data-search"
-	},
-	"Data Open": {
-		"scope": "jade",
-		"prefix": "dop",
-		"body": "data-open"
-	},
-	"data Submit": {
-		"scope": "jade",
-		"prefix": "dsub",
-		"body": "data-submit"
-	},
-	"Data Pseudo Label": {
-		"scope": "jade",
-		"prefix": "dpl",
-		"body": "data-pseudo-label='$lable'"
-	},
-	"Data One Select": {
-		"scope": "jade",
-		"prefix": "dosel",
-		"body": "data-one-select"
-	},
-	"Data Class": {
-		"scope": "jade",
-		"prefix": "dk",
-		"body": "data-class='.$0'"
-	},
-	"Data Asset": {
-		"scope": "jade",
-		"prefix": "dass",
-		"body": "data-asset='@img$0'"
-	},
-	"Data Href": {
-		"scope": "jade",
-		"prefix": "dhref",
-		"body": "data-href='$0'"
-	},
-	"data Href Blank": {
-		"scope": "jade",
-		"prefix": "dhrb",
-		"body": "data-href-blank"
-	},
-	"Data Label": {
-		"scope": "jade",
-		"prefix": "dl",
-		"body": "data-label"
-	},
-	"Data Show": {
-		"scope": "jade",
-		"prefix": "dssel",
-		"body": "data-show"
-	},
-	"Active Class": {
-		"scope": "jade",
-		"prefix": "ac",
+		"prefix": "ca",
 		"body": ".active"
 	},
-	"Loop": {
+	"Class: Fullscreen": {
 		"scope": "jade",
-		"prefix": "loop",
+		"prefix": "cf",
+		"body": ".fullscreen"
+	},
+	// Loops
+	"Loop: Each (custom)": {
+		"scope": "jade",
+		"prefix": "le",
 		"body": "each ${1:item} in ${2:items}.${3:items}\n\t"
 	},
-	"Ternary": {
+	// Conditions
+	"Condition: Ternary (custom)": {
 		"scope": "jade",
-		"prefix": "ter",
+		"prefix": "ct",
 		"body": "$1 ? $2 : $3"
 	},
-	"Include Markdown": {
+	// Includes
+	"Include: Markdown (custom)": {
 		"scope": "jade",
 		"prefix": "im",
-		"body": "include:markdown-it markdown/$article.md"
+		"body": "include:markdown-it markdown/$0.md"
 	},
-	"Image lazy": {
+	// Images
+	"Image: Lazy (custom)": {
 		"scope": "jade",
-		"prefix": "imgl",
+		"prefix": "il",
 		"body": "img(src='@img$1' alt='$2' loading='lazy')"
 	},
-	"Image": {
-		"scope": "jade",
-		"prefix": "img",
-		"body": "img(src='@img$1' alt='$2')"
-	},
-	"IBG": {
+	"Image: Background (custom)": {
 		"scope": "jade",
 		"prefix": "ibg",
 		"body": ".bg-image.${1:block}__image\n\timg(src='@img$2' alt='$3' loading='lazy')"
 	},
-	"IBGA": {
+	"Image: Background Link (custom)": {
 		"scope": "jade",
-		"prefix": "ibga",
+		"prefix": "ibgl",
 		"body": "a.bg-image.${1:block}__image(href='$2')\n\timg(src='@img$3' alt='$4' loading='lazy')"
 	},
-	"Logo": {
+	"Image: Logo (custom)": {
 		"scope": "jade",
-		"prefix": "logo",
+		"prefix": "ilogo",
 		"body": "a.logo(href='index.html')\n\timg(src='@img$1' alt='$2')"
 	},
-	"Sprite": {
+	"Image: Sprite (custom)": {
 		"scope": "jade",
-		"prefix": "sprite",
-		"body": "svg\n\tuse(href='@img/icons/sprite.svg#$icon')"
+		"prefix": "is",
+		"body": "svg\n\tuse(href='@img/icons/sprite.svg#$0')"
 	},
-	"Button": {
+  // Buttons
+	"Button (custom)": {
 		"scope": "jade",
 		"prefix": "btn",
 		"body": "button.button(type='${1:button}') $2"
 	},
-	"Button Link": {
+	"Button: Link (custom)": {
 		"scope": "jade",
-		"prefix": "abtn",
-		"body": "a.button(href='$1' ${2:target='_blank'} ${3:rel='noopener'}) $4"
+		"prefix": "btnl",
+		"body": "a.button(href='$1' ${2:target='_blank'} ${2:rel='noopener'}) $3"
 	},
-	"Menu": {
+	// Sections
+	"Component: Section (custom)": {
 		"scope": "jade",
-		"prefix": "menu",
-		"body": "nav.menu\n\tul.menu__list\n\t\tli.menu__item\n\t\t\ta.menu__link(href='$1') $2"
-	},
-	"Breadcrumb": {
-		"scope": "jade",
-		"prefix": "bc",
-		"body": "nav.breadcrumb(aria-label='breadcrumb')\n\tul.breadcrumb__list\n\t\tli.link\n\t\t\ta(href='#') ${2:prev}\n\t\tli.link\n\t\t\tspan(aria-current='page') ${3:current}"
-	},
-	"Spoilers": {
-		"scope": "jade",
-		"prefix": "spoilers",
-		"body": ".${1:spoilers}(data-spoilers='${3:768}')\n\tdetails.${2:spoiler}\n\t\tsummary.${2:spoiler}__trigger(type='button' data-spoiler) ${5:trigger}\n\t\t.${2:spoiler}__body ${6:content}"
-	},
-	"Tabs": {
-		"scope": "jade",
-		"prefix": "tabs",
-		"body": ".${1:tabs}(data-tabs)\n\tnav.${1:tabs}__triggers(data-tabs-triggers)\n\t\tbutton.${1:tabs}__trigger.trigger-active(type='button') ${2:btn}\n\t\tbutton.${1:tabs}__trigger(type='button') ${3:btn}\n\t\tbutton.${1:tabs}__trigger(type='button') ${4:btn}\n\t.${1:tabs}__panels(data-tabs-panels)\n\t\t.${1:tabs}__panel\n\t\t\t${5:| content}\n\t\t.${1:tabs}__panel\n\t\t\t${6:| content}\n\t\t.${1:tabs}__panel\n\t\t\t${7:| content}"
-	},
-	"Show More": {
-		"scope": "jade",
-		"prefix": "showmore",
-		"body": ".${1:showmore}(data-showmore)\n\t.${1:showmore}__content(data-showmore-content='${2:200}')\n\t\t$3\n\tbutton.button(type='button' data-showmore-button aria-expanded='false')\n\t\tspan ${4:Show more}\n\t\tspan ${5:Hide}"
-	},
-	"Swiper": {
-		"scope": "jade",
-		"prefix": "sf",
-		"body": ".swiper\n\t.swiper-wrapper.${1:block}__wrapper\n\t\t.swiper-slide.${1:block}__slide\n\t\t\t$2\n\t.swiper-pagination\n\t\tbutton.swiper-button-prev(type='button') $3\n\t\tbutton.swiper-button-next(type='button') $4\n\t.swiper-scrollbar"
-	},
-	"Section": {
-		"scope": "jade",
-		"prefix": "sec",
+		"prefix": "csec",
 		"body": "section.${1:block}\n\t.container\n\t\t$2"
 	},
-	"Section Response": {
+	"Component: Section Response (custom)": {
 		"scope": "jade",
-		"prefix": "secres",
+		"prefix": "csecres",
 		"body": "section.${1:block}\n\t.${1:block}__inner\n\t\t.container.${1:block}__container\n\t\t\t.${1:block}__body\n\t\t\t\t$4\n\t.${1:block}__image\n\t\timg(src='@img$2' alt='$3' loading='lazy')"
 	},
-	"Full Page Section": {
+	"Component: Section Full Page (custom)": {
 		"scope": "jade",
-		"prefix": "fullpage",
+		"prefix": "csfp",
 		"body": "section.${1:block}(data-fp-section)\n\t\t$2"
 	},
-	"Container": {
+	"Component: Container (custom)": {
 		"scope": "jade",
-		"prefix": "cnt",
+		"prefix": "c",
 		"body": ".container\n\t$0"
 	},
-	"Rating": {
+	// Components
+	"Component: Breadcrumb (custom)": {
 		"scope": "jade",
-		"prefix": "rating",
-		"body": "fieldset.rating.rating--set\n\t.rating__group\n\t\t.rating__active\n\t\t.rating__stars\n\t\t\tinput.rating__star(type='radio' value='1' name='rating')\n\t\t\tinput.rating__star(type='radio' value='2' name='rating')\n\t\t\tinput.rating__star(type='radio' value='3' name='rating')\n\t\t\tinput.rating__star(type='radio' value='4' name='rating')\n\t\t\tinput.rating__star(type='radio' value='5' name='rating')\n\t.rating__value 3.6"
+		"prefix": "cb",
+		"body": "nav.breadcrumb(aria-label='breadcrumb')\n\tul.breadcrumb__list\n\t\tli.link\n\t\t\ta(href='#') ${1:prev}\n\t\tli.link\n\t\t\tspan(aria-current='page') ${2:current}"
 	},
-	"Form email": {
+	"Component: Spoilers (custom)": {
 		"scope": "jade",
-		"prefix": "formemail",
-		"body": "form.${1:form}(method='${3:POST}')\n\tinput.${1:form}__input(type='email' inputmode='email' placeholder='${4:E-mail}' name='email' data-required='email')\n\tbutton.${1:form}__button.button(type='submit') ${6:Send}"
+		"prefix": "cs",
+		"body": ".${1:spoilers}(data-spoilers='${3:768}')\n\tdetails.${2:spoiler}\n\t\tsummary.${2:spoiler}__trigger(type='button' data-spoiler) ${4:trigger}\n\t\t.${2:spoiler}__body ${5:content}"
 	},
-	"Quantity": {
+	"Component: Tabs (custom)": {
 		"scope": "jade",
-		"prefix": "qa",
+		"prefix": "cts",
+		"body": ".${1:tabs}(data-tabs)\n\tnav.${1:tabs}__triggers(data-tabs-triggers)\n\t\tbutton.${1:tabs}__trigger.trigger-active(type='button') ${2:btn}\n\t\tbutton.${1:tabs}__trigger(type='button') ${3:btn}\n\t\tbutton.${1:tabs}__trigger(type='button') ${4:btn}\n\t.${1:tabs}__panels(data-tabs-panels)\n\t\t.${1:tabs}__panel\n\t\t\t${5:| content}\n\t\t.${1:tabs}__panel\n\t\t\t${6:| content}\n\t\t.${1:tabs}__panel\n\t\t\t${7:| content}"
+	},
+	"Component: Show More (custom)": {
+		"scope": "jade",
+		"prefix": "csm",
+		"body": ".${1:showmore}(data-showmore)\n\t.${1:showmore}__content(data-showmore-content='${2:200}')\n\t\t$3\n\tbutton.button(type='button' data-showmore-button)\n\t\tspan ${4:Show more}\n\t\tspan ${5:Hide}"
+	},
+	"Component: Swiper (custom)": {
+		"scope": "jade",
+		"prefix": "csf",
+		"body": ".swiper\n\t.swiper-wrapper.${1:block}__wrapper\n\t\t.swiper-slide.${1:block}__slide\n\t\t\t$2\n\t.swiper-pagination\n\t\tbutton.swiper-button-prev(type='button') $3\n\t\tbutton.swiper-button-next(type='button') $4\n\t.swiper-scrollbar"
+	},
+	// Forms
+	"Component: Form Email (custom)": {
+		"scope": "jade",
+		"prefix": "cfe",
+		"body": "form.${1:form}(method='${2:POST}')\n\tinput.${1:form}__input(type='email' inputmode='email' placeholder='${3:E-mail}' name='email' data-required='email')\n\tbutton.${1:form}__button.button(type='submit') ${4:Send}"
+	},
+	"Component: Rating": {
+		"scope": "jade",
+		"prefix": "cfr",
+		"body": "fieldset.rating.rating--set\n\t.rating__group\n\t\t.rating__active\n\t\t.rating__stars\n\t\t\tinput.rating__star(type='radio' value='1' name='rating')\n\t\t\tinput.rating__star(type='radio' value='2' name='rating')\n\t\t\tinput.rating__star(type='radio' value='3' name='rating')\n\t\t\tinput.rating__star(type='radio' value='4' name='rating')\n\t\t\tinput.rating__star(type='radio' value='5' name='rating')\n\t.rating__value 0"
+	},
+	"Component: Quantity": {
+		"scope": "jade",
+		"prefix": "cfq",
 		"body": ".quantity(data-quantity)\n\tbutton.quantity__button.quantity__button--plus(type='button' data-quantity-plus)\n\t.quantity__input\n\t\tinput(type='text' value='1' name='quantity' data-quantity-value)\n\tbutton.quantity__button.quantity__button--minus(type='button' data-quantity-minus)"
 	},
-	"Input": {
+	"Component: Input (custom)": {
 		"scope": "jade",
-		"prefix": "inp",
-		"body": "input.${1:input}(type='${2:text}' inputmode='text' name='${3:input}' placeholder='$4')"
+		"prefix": "cfi",
+		"body": "input.${1:input}(type='${2:text}' inputmode='text' autocomplete='${3:given-name}' name='${4:input}' placeholder='$5')"
 	},
-	"Textarea": {
+	"Component: Textarea (custom)": {
 		"scope": "jade",
-		"prefix": "txta",
-		"body": "textarea.${1:input}(name='${2:message}' placeholder='$3')"
+		"prefix": "cft",
+		"body": "textarea.${1:input}(autocomplete='${2:given-name}' name='${3:message}' placeholder='$4')"
 	},
-	"Select": {
+	"Component: Select (custom)": {
 		"scope": "jade",
-		"prefix": "sel",
-		"body": "select.${1:select}(name='select')\n\toption(value='1' selected) ${2:option}\n\toption(value='2') ${3:option}\n\toption(value='3') ${4:option}\n\toption(value='4') ${5:option}"
+		"prefix": "cfs",
+		"body": "select.${1:select}(autocomplete='${2:given-name}' name='select')\n\toption(value='1' selected) ${3:option}\n\toption(value='2') ${4:option}\n\toption(value='3') ${5:option}\n\toption(value='4') ${6:option}"
 	},
-	"Radio Buttons": {
+	"Component: Radio": {
 		"scope": "jade",
-		"prefix": "opt",
+		"prefix": "cfo",
 		"body": ".options\n\tlabel.label.option\n\t\tinput.option__input(type='radio' name='option' checked)\n\t\tspan.option__box\n\t\t| text\n\tlabel.label.option\n\t\tinput.option__input(type='radio' name='option')\n\t\tspan.option__box\n\t\t| text"
 	},
-	"Checkbox": {
+	"Component: Checkbox (custom)": {
 		"scope": "jade",
-		"prefix": "chk",
-		"body": ".checkboxes\n\tlabel.label.checkbox\n\t\tinput.checkbox__input(type='checkbox' name='checkbox')\n\t\tspan.checkbox__box\n\t\t\tsvg\n\t\t\t\tuse(href='@img/icons/sprite.svg#${1:check}')\n\t\t| text\n\tlabel.label.checkbox\n\t\tinput.checkbox__input(type='checkbox' name='checkbox')\n\t\tspan.checkbox__box\n\t\t\tsvg\n\t\t\t\tuse(href='@img/icons/sprite.svg#${1:check}')\n\t\t| text"
+		"prefix": "cfc",
+		"body": ".checkboxes\n\tlabel.label.checkbox\n\t\tinput.checkbox__input(type='checkbox' name='checkbox')\n\t\tspan.checkbox__box\n\t\t\tsvg\n\t\t\t\tuse(href='@img/icons/sprite.svg#${0:check}')\n\t\t| text\n\tlabel.label.checkbox\n\t\tinput.checkbox__input(type='checkbox' name='checkbox')\n\t\tspan.checkbox__box\n\t\t\tsvg\n\t\t\t\tuse(href='@img/icons/sprite.svg#${0:check}')\n\t\t| text"
 	}
 }

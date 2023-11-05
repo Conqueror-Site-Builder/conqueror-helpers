@@ -63,12 +63,12 @@
 	// Time
 	"Set: Interval (0, custom)": {
 		"scope": "javascript,typescript",
-		"prefix": "siz",
+		"prefix": "si",
 		"body": "setInterval(($1) => {\n\t$2\n}, ${3:0})"
 	},
 	"Set: Timeout (0, custom)": {
 		"scope": "javascript,typescript",
-		"prefix": "stz",
+		"prefix": "st",
 		"body": "setTimeout(($1) => {\n\t$2\n}, ${3:0})"
 	},
 	// Elements Operations

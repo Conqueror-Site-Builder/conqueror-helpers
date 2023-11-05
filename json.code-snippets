@@ -1,26 +1,25 @@
 {
-	// Root
-	"JSON: Root Object (empty, custom)": {
+	// Object
+	"Object: Root (empty, custom)": {
 		"scope": "json",
-		"prefix": "jroe",
+		"prefix": "ore",
 		"body": "{\n\t$0\n}"
 	},
-	// Object
-	"JSON: Object (custom)": {
+	"Object (custom)": {
 		"scope": "json",
-		"prefix": "jo",
+		"prefix": "o",
 		"body": "\"${1:title}\": {\n\t\"${2:key}\": \"${3:value}\"\n}"
 	},
 	// Array
-	"JSON: Array (custom)": {
+	"Array (custom)": {
 		"scope": "json",
-		"prefix": "ja",
+		"prefix": "a",
 		"body": "\"${1:title}\": [\n\t\"${2:item}\"\n]"
 	},
 	// Item
-	"JSON: Item (custom)": {
+	"Item (custom)": {
 		"scope": "json",
-		"prefix": "ji",
+		"prefix": "i",
 		"body": "\"${1:key}\": \"${2:value}\"\n"
 	}
 }
