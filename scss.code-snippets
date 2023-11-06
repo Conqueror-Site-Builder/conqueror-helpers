@@ -543,6 +543,11 @@
 		"prefix": "pep",
 		"body": "&::placeholder {\n\t$0\n}"
 	},
+	"Pseudo: Element Marker (custom)": {
+		"scope": "scss",
+		"prefix": "pem",
+		"body": "&::marker {\n\t$0\n}"
+	},
 	// Pseudo classes
   "Pseudo: Class Active (custom)": {
 		"scope": "scss",
