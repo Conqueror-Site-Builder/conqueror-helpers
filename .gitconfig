@@ -1,13 +1,13 @@
 [user]
   name = user
-	email = example.user@email.com
+	email = <user@users.noreply.github.com>
 [core]
   autocrlf = input
   safecrlf = warn
   quotepath = off
-	excludesFile = path/to/.gitignore_global
+	excludesFile = ~/.gitignore_global
 [commit]
-  template = path/to/.gitmessage.txt
+  template = ~/.gitmessage.txt
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
@@ -17,11 +17,11 @@
   defaultBranch = main
 [alias]
 	a = add -A
+	cam = commit -a -m
+	t = tag
+  ms = merge --squash
 	b = branch
 	bd = branch -d
-	bdp = push origin -d
-	c = commit -a -m
-	p = push origin
-	t = tag
+	po = push origin
+	pod = push origin -d
   fp = fetch --prune
-  sq = merge --squash
