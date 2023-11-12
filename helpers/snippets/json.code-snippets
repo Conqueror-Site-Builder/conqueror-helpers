@@ -1,25 +1,25 @@
 {
-	// Object
-	"Object: Root (empty, custom)": {
-		"scope": "json",
-		"prefix": "ore",
-		"body": "{\n\t$0\n}"
-	},
-	"Object (custom)": {
-		"scope": "json",
-		"prefix": "o",
-		"body": "\"${1:title}\": {\n\t\"${2:key}\": \"${3:value}\"\n}"
-	},
-	// Array
-	"Array (custom)": {
-		"scope": "json",
-		"prefix": "a",
-		"body": "\"${1:title}\": [\n\t\"${2:item}\"\n]"
-	},
-	// Item
-	"Item (custom)": {
-		"scope": "json",
-		"prefix": "i",
-		"body": "\"${1:key}\": \"${2:value}\"\n"
-	}
+  // Object
+  "Object: Root (empty, custom)": {
+    "scope": "json",
+    "prefix": "ore",
+    "body": "{\n\t$0\n}"
+  },
+  "Object (custom)": {
+    "scope": "json",
+    "prefix": "o",
+    "body": "\"${1:title}\": {\n\t\"${2:key}\": \"${3:value}\"\n}"
+  },
+  // Array
+  "Array (custom)": {
+    "scope": "json",
+    "prefix": "a",
+    "body": "\"${1:title}\": [\n\t\"${2:item}\"\n]"
+  },
+  // Item
+  "Item (custom)": {
+    "scope": "json",
+    "prefix": "i",
+    "body": "\"${1:key}\": \"${2:value}\"\n"
+  }
 }

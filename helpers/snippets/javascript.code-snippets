@@ -1,132 +1,132 @@
 {
-	// Imports
-	"Import: Package (custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "ip",
-		"body": "import ${1:packageName} from '${2:packageName}'"
-	},
-	// Listeners
+  // Imports
+  "Import: Package (custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "ip",
+    "body": "import ${1:packageName} from '${2:packageName}'"
+  },
+  // Listeners
   "Event: Listener (custom)": {
-		"scope": "javascript,typescript",
+    "scope": "javascript,typescript",
     "prefix": "el",
     "body": "document.addEventListener('${1:event}', (event) => {\n\t$2\n})"
   },
   "Event: Listener (click, custom)": {
-		"scope": "javascript,typescript",
+    "scope": "javascript,typescript",
     "prefix": "elc",
     "body": "document.addEventListener('click', (event) => {\n\t$0\n})"
   },
-	// Document queries
+  // Document queries
   "Const: Document (query all, custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "cdqa",
+    "scope": "javascript,typescript",
+    "prefix": "cdqa",
     "body": "const ${1:elements} = document.querySelectorAll('${2:element}')"
   },
-	"Const: Document (query, custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "cdq",
-		"body": "const ${1:element} = document.querySelector('${2:element}')"
-	},
-	// Consts
-	"Const: Empty (custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "ce",
-		"body": "const ${1:element} = $2"
-	},
-	"Const: Target Element (event.target)": {
-		"scope": "javascript,typescript",
-		"prefix": "cte",
-		"body": "const targetElement = event.target"
-	},
-	// Functions
-	"Function: Expression (custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "fe",
-		"body": "const ${1:functionName} = (${2:arguments}) => {\n\t$3\n}"
-	},
-	"Function: Anonymous (custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "fa",
-		"body": "(${1:arguments}) => {\n\t$2\n}"
-	},
-	"Function: Method (custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "fm",
-		"body": "${1:methodName}(${2:arguments}) {\n\t$3\n}"
-	},
-	// Loops
-	"Loop: For Each (array, custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "lfea",
-		"body": "${1:array}.forEach((${2:item}) => {\n\t$3\n})"
-	},
-	// Time
-	"Set: Interval (0, custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "si",
-		"body": "setInterval(($1) => {\n\t$2\n}, ${3:0})"
-	},
-	"Set: Timeout (0, custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "st",
-		"body": "setTimeout(($1) => {\n\t$2\n}, ${3:0})"
-	},
-	// Elements Operations
+  "Const: Document (query, custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "cdq",
+    "body": "const ${1:element} = document.querySelector('${2:element}')"
+  },
+  // Consts
+  "Const: Empty (custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "ce",
+    "body": "const ${1:element} = $2"
+  },
+  "Const: Target Element (event.target)": {
+    "scope": "javascript,typescript",
+    "prefix": "cte",
+    "body": "const targetElement = event.target"
+  },
+  // Functions
+  "Function: Expression (custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "fe",
+    "body": "const ${1:functionName} = (${2:arguments}) => {\n\t$3\n}"
+  },
+  "Function: Anonymous (custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "fa",
+    "body": "(${1:arguments}) => {\n\t$2\n}"
+  },
+  "Function: Method (custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "fm",
+    "body": "${1:methodName}(${2:arguments}) {\n\t$3\n}"
+  },
+  // Loops
+  "Loop: For Each (array, custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "lfea",
+    "body": "${1:array}.forEach((${2:item}) => {\n\t$3\n})"
+  },
+  // Time
+  "Set: Interval (0, custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "si",
+    "body": "setInterval(($1) => {\n\t$2\n}, ${3:0})"
+  },
+  "Set: Timeout (0, custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "st",
+    "body": "setTimeout(($1) => {\n\t$2\n}, ${3:0})"
+  },
+  // Elements Operations
   "Element: Add (class, custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "eac",
+    "scope": "javascript,typescript",
+    "prefix": "eac",
     "body": "${1:element}.classList.add('${2:className}')"
   },
   "Element: Toggle (class, custom)": {
-		"scope": "javascript,typescript",
+    "scope": "javascript,typescript",
     "prefix": "etc",
     "body": "${1:element}.classList.toggle('${2:className}')"
   },
   "Element: Remove (class, custom)": {
-		"scope": "javascript,typescript",
+    "scope": "javascript,typescript",
     "prefix": "erc",
     "body": "${1:element}.classList.remove('${2:className}')"
   },
   "Element: Set (attribute, custom)": {
-		"scope": "javascript,typescript",
+    "scope": "javascript,typescript",
     "prefix": "esa",
     "body": "${1:element}.setAttribute('${2:attributeName}', ${3:value})"
   },
-	"Element: Get (attribute, custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "ega",
-		"body": "${1:element}.dataset.${2:attributeName}"
-	},
+  "Element: Get (attribute, custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "ega",
+    "body": "${1:element}.dataset.${2:attributeName}"
+  },
   "Element: Remove (attribute, custom)": {
-		"scope": "javascript,typescript",
+    "scope": "javascript,typescript",
     "prefix": "era",
     "body": "${1:element}.removeAttribute('${2:attributeName}')"
   },
-	// Insert
-	"Insert: Adjacent HTML (custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "iah",
-		"body": "${1:element}.insertAdjacentHTML('beforeend', $2)"
-	},
-	"Insert: Inner HTML (custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "iih",
-		"body": "${1:element}.innerHTML = $2"
-	},
-	"Insert: Text Content (custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "itc",
+  // Insert
+  "Insert: Adjacent HTML (custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "iah",
+    "body": "${1:element}.insertAdjacentHTML('beforeend', $2)"
+  },
+  "Insert: Inner HTML (custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "iih",
+    "body": "${1:element}.innerHTML = $2"
+  },
+  "Insert: Text Content (custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "itc",
     "body": "${1:element}.textContent = $2"
   },
-	// Handle JSON
-	"Handle: Parse JSON (custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "hpj",
-		"body": "JSON.parse($0)"
-	},
-	"Handle: Stringify JSON (custom)": {
-		"scope": "javascript,typescript",
-		"prefix": "hsj",
-		"body": "JSON.stringify($0)"
-	}
+  // Handle JSON
+  "Handle: Parse JSON (custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "hpj",
+    "body": "JSON.parse($0)"
+  },
+  "Handle: Stringify JSON (custom)": {
+    "scope": "javascript,typescript",
+    "prefix": "hsj",
+    "body": "JSON.stringify($0)"
+  }
 }

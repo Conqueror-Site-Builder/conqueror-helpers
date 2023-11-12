@@ -1,21 +1,21 @@
 {
-	"recommendations": [
-		"aaron-bond.better-comments",
-		"treetsidesoftware.code-spell-checker",
-		"vunguyentuan.vscode-css-variables",
-		"editorconfig.editorconfig",
-		"usernamehw.errorlens",
-		"github.remotehub",
-		"github.github-vscode-theme",
-		"eamodio.gitlens",
-		"pkief.material-icon-theme",
-		"mintlify.document",
-		"christian-kohler.path-intellisense",
-		"ducfilan.pug-formatter",
-		"ms-vscode.remote-repositories",
-		"sibiraj-s.vscode-scss-formatter",
-		"mrmlnc.vscode-scss",
-		"meganrogge.template-string-converter",
-		"chakrounanas.turbo-console-log"
-	]
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "treetsidesoftware.code-spell-checker",
+    "vunguyentuan.vscode-css-variables",
+    "editorconfig.editorconfig",
+    "usernamehw.errorlens",
+    "github.remotehub",
+    "github.github-vscode-theme",
+    "eamodio.gitlens",
+    "pkief.material-icon-theme",
+    "mintlify.document",
+    "christian-kohler.path-intellisense",
+    "ducfilan.pug-formatter",
+    "ms-vscode.remote-repositories",
+    "sibiraj-s.vscode-scss-formatter",
+    "mrmlnc.vscode-scss",
+    "meganrogge.template-string-converter",
+    "chakrounanas.turbo-console-log"
+  ]
 }
