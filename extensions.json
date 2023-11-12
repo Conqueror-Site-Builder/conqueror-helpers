@@ -9,6 +9,7 @@
 		"github.github-vscode-theme",
 		"eamodio.gitlens",
 		"pkief.material-icon-theme",
+		"mintlify.document",
 		"christian-kohler.path-intellisense",
 		"ducfilan.pug-formatter",
 		"ms-vscode.remote-repositories",
