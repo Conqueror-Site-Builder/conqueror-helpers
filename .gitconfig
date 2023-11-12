@@ -7,7 +7,7 @@
   quotepath = off
 	excludesFile = path/to/.gitignore_global
 [commit]
-  template = path/to/.gitmessage
+  template = path/to/.gitmessage.txt
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f

@@ -1,13 +1,11 @@
 # Title: Summary, imperative, start upper case, don't end with a period
 # No more than 50 chars. #### 50 chars is here:  #
 
-# Body: Explain *what* and *why* (not *how*). Task ID (#issue).
+# Task ID (#issue).
 # Wrap at 72 chars. ################################## which is here:  #
 
-# At the end: Include Co-authored-by for all contributors.
-# Include at least one empty line before it. Format:
 # Co-authored-by: name <user@users.noreply.github.com>
-#
+
 # 1. Separate subject from body with a blank line
 # 2. Limit the subject line to 50 characters
 # 3. Capitalize the subject line
