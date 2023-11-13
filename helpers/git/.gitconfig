@@ -1,20 +1,42 @@
 [user]
-  name = user
 	email = <user@users.noreply.github.com>
+  name = user
 [core]
-  autocrlf = input
-  safecrlf = warn
-  quotepath = off
 	excludesFile = ~/.gitignore_global
-[commit]
-  template = ~/.gitmessage.txt
-[filter "lfs"]
-  clean = git-lfs clean -- %f
-  smudge = git-lfs smudge -- %f
-  process = git-lfs filter-process
-  required = true
+	pager = cat
+	whitespace = -trailing-space
+  autocrlf = input
+  quotepath = off
+  safecrlf = warn
 [init]
   defaultBranch = main
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  process = git-lfs filter-process
+  required = true
+  smudge = git-lfs smudge -- %f
+[rerere]
+  autoupdate = true
+  enabled = true
+[commit]
+	template = ~/.gitmessage.txt
+[tag]
+  sort = version:refname
+[log]
+  abbrevCommit = true
+  decorate = false
+  follow = true
+[diff]
+  renames = true
+  submodule = log
+[status]
+  showUntrackedFiles = all
+  submoduleSummary = true
+[push]
+  default = upstream
+  followTags = true
+[fetch]
+  recurseSubmodules = on-demand
 [alias]
 	a = add -A
 	cam = commit -a -m
