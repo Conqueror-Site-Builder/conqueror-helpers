@@ -1,7 +1,7 @@
 {
   // Security
-  "security.workspace.trust.untrustedFiles": "open",
   "security.workspace.trust.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
   // Update
   "update.showReleaseNotes": false,
   // Window
@@ -9,21 +9,19 @@
   "window.menuBarVisibility": "compact",
   // Workbench
   "workbench.activityBar.location": "hidden",
+  "workbench.colorCustomizations": {},
   "workbench.colorTheme": "GitHub Dark",
-  "workbench.editor.enablePreview": false,
   "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
+  "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.editor.tabSizing": "shrink",
   "workbench.tips.enabled": false,
-  // Explorer
-  "explorer.compactFolders": false,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
   // Editor
-  "editor.cursorBlinking": "expand",
+  "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 2,
@@ -51,36 +49,33 @@
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.wordSeparators": "`~!@#$%^&*()-_=+[{]}\\|;:'\",.<>/?",
-  // Other
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  // Navigation
   "breadcrumbs.enabled": false,
   // Files
   "files.autoSave": "afterDelay",
-  "files.eol": "\n",
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
+  // Git
+  "git.autofetch": true,
+  "git.autofetchPeriod": 30,
+  "git.confirmSync": false,
+  "git.ignoreLimitWarning": true,
   // Terminal
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorWidth": 2,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.profiles.windows": {
-    "Git Bash": {
-      "source": "Git Bash"
-    }
-  },
-  // Git
-  "git.autofetch": true,
-  "git.autofetchPeriod": 30,
-  "git.confirmSync": false,
-  "git.ignoreLimitWarning": true,
-  // NPM
-  "npm.fetchOnlinePackageInfo": false,
   // Extensions
   "extensions.ignoreRecommendations": true,
+  // NPM
+  "npm.fetchOnlinePackageInfo": false,
   // javaScript and typeScript
+  "javascript.suggest.paths": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.paths": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[javascript,typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -89,19 +84,15 @@
   "scss.format.enable": false,
   "scss.format.spaceAroundSelectorSeparator": true,
   "scss.lint.duplicateProperties": "error",
+  "scss.lint.important": "warning",
   "scss.showErrors": true,
   "[scss]": {
     "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
   },
   "scssFormatter.printWidth": 85,
-  "scssFormatter.trailingComma": "none",
-  // CSS
-  "css.lint.duplicateProperties": "error",
   // Pug
   "pugFormatter.removeDiv": true,
   // Path-intellisense
-  "typescript.suggest.paths": false,
-  "javascript.suggest.paths": false,
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.autoTriggerNextSuggestion": true,
   "path-intellisense.ignoreTsConfigBaseUrl": true,
