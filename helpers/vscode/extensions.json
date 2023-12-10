@@ -5,6 +5,7 @@
     "vunguyentuan.vscode-css-variables",
     "editorconfig.editorconfig",
     "usernamehw.errorlens",
+    "github.vscode-github-actions",
     "github.remotehub",
     "github.github-vscode-theme",
     "eamodio.gitlens",
@@ -16,6 +17,7 @@
     "sibiraj-s.vscode-scss-formatter",
     "mrmlnc.vscode-scss",
     "meganrogge.template-string-converter",
-    "chakrounanas.turbo-console-log"
+    "chakrounanas.turbo-console-log",
+    "redhat.vscode-yaml"
   ]
 }

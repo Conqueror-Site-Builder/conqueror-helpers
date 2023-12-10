@@ -37,13 +37,3 @@
   followTags = true
 [fetch]
   recurseSubmodules = on-demand
-[alias]
-	a = add -A
-	cam = commit -a -m
-	t = tag
-  ms = merge --squash
-	b = branch
-	bd = branch -d
-	po = push origin
-	pod = push origin -d
-  fp = fetch --prune
