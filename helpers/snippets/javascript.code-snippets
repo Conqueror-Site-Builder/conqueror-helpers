@@ -1,12 +1,12 @@
 {
   // Imports
-  "Import: Package (custom)": {
+  "Import: Package": {
     "scope": "javascript,typescript",
     "prefix": "ip",
     "body": "import ${1:packageName} from '${2:packageName}'"
   },
   // Listeners
-  "Event: Listener (custom)": {
+  "Event: Listener": {
     "scope": "javascript,typescript",
     "prefix": "el",
     "body": "document.addEventListener('${1:event}', (event) => {\n\t$2\n})"
@@ -28,7 +28,7 @@
     "body": "const ${1:element} = document.querySelector('${2:element}')"
   },
   // Consts
-  "Const: Empty (custom)": {
+  "Const: Empty": {
     "scope": "javascript,typescript",
     "prefix": "ce",
     "body": "const ${1:element} = $2"
@@ -39,17 +39,17 @@
     "body": "const targetElement = event.target"
   },
   // Functions
-  "Function: Expression (custom)": {
+  "Function: Expression": {
     "scope": "javascript,typescript",
     "prefix": "fe",
     "body": "const ${1:functionName} = (${2:arguments}) => {\n\t$3\n}"
   },
-  "Function: Anonymous (custom)": {
+  "Function: Anonymous": {
     "scope": "javascript,typescript",
     "prefix": "fa",
     "body": "(${1:arguments}) => {\n\t$2\n}"
   },
-  "Function: Method (custom)": {
+  "Function: Method": {
     "scope": "javascript,typescript",
     "prefix": "fm",
     "body": "${1:methodName}(${2:arguments}) {\n\t$3\n}"
@@ -103,28 +103,28 @@
     "body": "${1:element}.removeAttribute('${2:attributeName}')"
   },
   // Insert
-  "Insert: Adjacent HTML (custom)": {
+  "Insert: Adjacent HTML": {
     "scope": "javascript,typescript",
     "prefix": "iah",
     "body": "${1:element}.insertAdjacentHTML('beforeend', $2)"
   },
-  "Insert: Inner HTML (custom)": {
+  "Insert: Inner HTML": {
     "scope": "javascript,typescript",
     "prefix": "iih",
     "body": "${1:element}.innerHTML = $2"
   },
-  "Insert: Text Content (custom)": {
+  "Insert: Text Content": {
     "scope": "javascript,typescript",
     "prefix": "itc",
     "body": "${1:element}.textContent = $2"
   },
   // Handle JSON
-  "Handle: Parse JSON (custom)": {
+  "Handle: Parse JSON": {
     "scope": "javascript,typescript",
     "prefix": "hpj",
     "body": "JSON.parse($0)"
   },
-  "Handle: Stringify JSON (custom)": {
+  "Handle: Stringify JSON": {
     "scope": "javascript,typescript",
     "prefix": "hsj",
     "body": "JSON.stringify($0)"
