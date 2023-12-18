@@ -1,23 +1,23 @@
 {
   // Object
-  "Object: Root (empty, custom)": {
+  "Object: Root (empty)": {
     "scope": "json",
     "prefix": "ore",
     "body": "{\n\t$0\n}"
   },
-  "Object (custom)": {
+  "Object": {
     "scope": "json",
     "prefix": "o",
     "body": "\"${1:title}\": {\n\t\"${2:key}\": \"${3:value}\"\n}"
   },
   // Array
-  "Array (custom)": {
+  "Array": {
     "scope": "json",
     "prefix": "a",
     "body": "\"${1:title}\": [\n\t\"${2:item}\"\n]"
   },
   // Item
-  "Item (custom)": {
+  "Item": {
     "scope": "json",
     "prefix": "i",
     "body": "\"${1:key}\": \"${2:value}\"\n"

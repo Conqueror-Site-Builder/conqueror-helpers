@@ -1,11 +1,11 @@
 {
   // Include and extend
-  "Extend (custom)": {
+  "Extend": {
     "scope": "scss",
     "prefix": "ext",
     "body": "@extend %$0;"
   },
-  "Include (custom)": {
+  "Include": {
     "scope": "scss",
     "prefix": "inc",
     "body": "@include $0;"
@@ -42,12 +42,12 @@
     "body": "@extend %smooth-scroll;"
   },
   // Mixins
-  "Mixin: Gradient Text (custom)": {
+  "Mixin: Gradient Text": {
     "scope": "scss",
     "prefix": "mtg",
     "body": "@include text-gradient($0);"
   },
-  "Mixin: Pseudo (custom)": {
+  "Mixin: Pseudo": {
     "scope": "scss",
     "prefix": "mp",
     "body": "@include pseudo($0);"
@@ -57,32 +57,32 @@
     "prefix": "mcr",
     "body": "@include currency(\"${0:₽}\");"
   },
-  "Mixin: Truncate Text (custom)": {
+  "Mixin: Truncate Text": {
     "scope": "scss",
     "prefix": "mtt",
     "body": "@include truncate(${1:400}, ${2:text}, ${3:3}, ${4:1});"
   },
-  "Mixin: Slide Animation (custom)": {
+  "Mixin: Slide Animation": {
     "scope": "scss",
     "prefix": "msa",
     "body": "@include slide(${1:5}, ${2:100}, ${3:1}, 0.${4:2}, ${5:top});"
   },
-  "Mixin: Triangle (custom)": {
+  "Mixin: Triangle": {
     "scope": "scss",
     "prefix": "mt",
     "body": "@include triangle(var(--color-$1, #{\\$color-$2}), ${3:bottom}, ${4:10}, ${5:10}, ${6:10}, ${7:10}, ${8:absolute});"
   },
-  "Mixin: Grid Cards (custom)": {
+  "Mixin: Grid Cards": {
     "scope": "scss",
     "prefix": "mgc",
     "body": "@include grid(${1:fill}, to-rem(${2:290}), ${3:1fr}, ${4:\\$phone}) {\n\tgap: to-rem(${5:30});\n\tjustify-items: center;\n}"
   },
-  "Mixin: Responsive Output (custom)": {
+  "Mixin: Responsive Output": {
     "scope": "scss",
     "prefix": "mro",
     "body": "@include responsive-output(${1:400}, ${2:\\$tablet}, ${3:0});"
   },
-  "Mixin: Responsive Value (custom)": {
+  "Mixin: Responsive Value": {
     "scope": "scss",
     "prefix": "mrv",
     "body": "@include responsive-value(\"$1\", $2, $3);"
@@ -158,17 +158,17 @@
     "body": "@include responsive-value(\"padding-inline-end\", $1, $2);"
   },
   // Media queries
-  "Mixin: @media Max And Min (custom)": {
+  "Mixin: @media Max And Min": {
     "scope": "scss",
     "prefix": "mqmm",
     "body": "@include media-min-max($1, $2) {\n\t$3\n}"
   },
-  "Mixin: @media min (custom)": {
+  "Mixin: @media min": {
     "scope": "scss",
     "prefix": "mqmin",
     "body": "@include media-min($1) {\n\t$2\n}"
   },
-  "Mixin: @media max (custom)": {
+  "Mixin: @media max": {
     "scope": "scss",
     "prefix": "mqmax",
     "body": "@include media-max($1) {\n\t$2\n}"
@@ -229,7 +229,7 @@
     "prefix": "mhdn",
     "body": "@include media-hover {\n\ttext-decoration: none;\n}"
   },
-  "@media: Hover (custom)": {
+  "@media: Hover": {
     "scope": "scss",
     "prefix": "mh",
     "body": "@media (any-hover: hover) {\n\t$0\n}"
@@ -246,44 +246,44 @@
     "body": "@include media-motion(no-preference) {\n\t$0\n}"
   },
   // Functions
-  "Function: PX To EM (custom)": {
+  "Function: PX To EM": {
     "scope": "scss",
     "prefix": "fem",
     "body": "to-em(${1:$2, $3})"
   },
-  "Function: PX To REM (custom)": {
+  "Function: PX To REM": {
     "scope": "scss",
     "prefix": "frem",
     "body": "to-rem($0)"
   },
-  "Function: PX To Percent (custom)": {
+  "Function: PX To Percent": {
     "scope": "scss",
     "prefix": "fprc",
     "body": "to-percent($1, $2)"
   },
-  "Function: Divide (custom)": {
+  "Function: Divide": {
     "scope": "scss",
     "prefix": "fd",
     "body": "div-rounding($1, $2)"
   },
   // Theme
-  "Theme: Dark (custom)": {
+  "Theme: Dark": {
     "scope": "scss",
     "prefix": "td",
     "body": ".dark & {\n\t$0\n}"
   },
-  "Theme: Light (custom)": {
+  "Theme: Light": {
     "scope": "scss",
     "prefix": "tl",
     "body": ".ligth & {\n\t$0\n}"
   },
   // Font
-  "Font: Family (custom)": {
+  "Font: Family": {
     "scope": "scss",
     "prefix": "ff",
     "body": "font-family: var(--font-$1, #{\\$font-$2});"
   },
-  "Font: Line Height (custom)": {
+  "Font: Line Height": {
     "scope": "scss",
     "prefix": "flh",
     "body": "line-height: div-rounding($1, ${2:\\$font-size});"
@@ -304,7 +304,7 @@
     "body": "white-space: nowrap;"
   },
   // Position
-  "Position (custom)": {
+  "Position": {
     "scope": "scss",
     "prefix": "p",
     "body": "position: ${0:absolute};\ninset: 0;"
@@ -375,7 +375,7 @@
     "prefix": "fbp",
     "body": "flex-grow: 0;\nflex-shrink: 0;\nflex-basis: to-percent($1, $2);"
   },
-  "Flex: Basis (custom)": {
+  "Flex: Basis": {
     "scope": "scss",
     "prefix": "fb",
     "body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: $0;"
@@ -422,7 +422,7 @@
     "body": "margin-inline: auto;"
   },
   // Box
-  "Box: Shadow (custom)": {
+  "Box: Shadow": {
     "scope": "scss",
     "prefix": "bs",
     "body": "box-shadow: ${1:0} ${2:0} to-rem(${3:0}) rgb(var(--color-${4:primary}-rgb, #{\\$color-${4:primary}-rgb}) / 0.${5:3});"
@@ -496,13 +496,13 @@
     "body": "border-radius: 50%;"
   },
   // Background
-  "Background: Image (custom)": {
+  "Background: Image": {
     "scope": "scss",
     "prefix": "bi",
     "body": "background-image: url(\"@img$0\");\nbackground-position-y: 0;\nbackground-position-x: 0;\nnbackground-size: cover;\nbackground-repeat: no-repeat;"
   },
   // Childs
-  "Child: Not Last (custom)": {
+  "Child: Not Last": {
     "scope": "scss",
     "prefix": "cnl",
     "body": "&:not(:last-child) {\n\t$0\n}"
@@ -517,50 +517,50 @@
     "prefix": "cnlmbe",
     "body": "&:not(:last-child) {\n\tmargin-block-end: to-em($1, ${2:\\$font-size});\n}"
   },
-  "Child: Nth (custom)": {
+  "Child: Nth": {
     "scope": "scss",
     "prefix": "cn",
     "body": "&:nth-child($1) {\n\t$2\n}"
   },
   // Pseudo elements
-  "Pseudo: Elements Before And After (custom)": {
+  "Pseudo: Elements Before And After": {
     "scope": "scss",
     "prefix": "peba",
     "body": "position: relative;\n\n&::before,\n&::after {\n\t@include pseudo;\n\t$0\n}"
   },
-  "Pseudo: Element After (custom)": {
+  "Pseudo: Element After": {
     "scope": "scss",
     "prefix": "pea",
     "body": "position: relative;\n\n&::after {\n\t@include pseudo;\n\t$0\n}"
   },
-  "Pseudo: Element Before (custom)": {
+  "Pseudo: Element Before": {
     "scope": "scss",
     "prefix": "peb",
     "body": "position: relative;\n\n&::before {\n\t@include pseudo;\n\t$0\n}"
   },
-  "Pseudo: Element Placeholder (custom)": {
+  "Pseudo: Element Placeholder": {
     "scope": "scss",
     "prefix": "pep",
     "body": "&::placeholder {\n\t$0\n}"
   },
-  "Pseudo: Element Marker (custom)": {
+  "Pseudo: Element Marker": {
     "scope": "scss",
     "prefix": "pem",
     "body": "&::marker {\n\t$0\n}"
   },
   // Pseudo classes
-  "Pseudo: Class Active (custom)": {
+  "Pseudo: Class Active": {
     "scope": "scss",
     "prefix": "pca",
     "body": "&:active {\n\t$0\n}"
   },
-  "Pseudo: Class Focus Visible (custom)": {
+  "Pseudo: Class Focus Visible": {
     "scope": "scss",
     "prefix": "pcfv",
     "body": "&:focus-visible {\n\t$0\n}"
   },
   // Animation
-  "Animation: Key Frames (custom)": {
+  "Animation: Key Frames": {
     "scope": "scss",
     "prefix": "akf",
     "body": "@keyframes ${1:name} {\n\t0% {\n\t\t$2\n\t}\n\t100% {\n\t\t$3\n\t}\n}"
@@ -572,12 +572,12 @@
     "body": "transition: ${1:all} var(--default-transition-duration, #{\\$default-transition-duration});"
   },
   // Transform
-  "Transform: Rotate (custom)": {
+  "Transform: Rotate": {
     "scope": "scss",
     "prefix": "tr",
     "body": "rotate: -${0:180}deg;"
   },
-  "Transform: Scale (custom)": {
+  "Transform: Scale": {
     "scope": "scss",
     "prefix": "ts",
     "body": "scale: ${0:1};"
@@ -593,19 +593,19 @@
     "prefix": "fbb",
     "body": "backdrop-filter: blur(to-rem($0));"
   },
-  "Filter (custom)": {
+  "Filter": {
     "scope": "scss",
     "prefix": "f",
     "body": "position: relative;\n\n&::before {\n\t@include pseudo;\n\tinset: 0;\n\tbackground-color: rgb(var(--color-${0:primary}-rgb, #{\\$color-${0:primary}-rgb}) / 0.3);\n}"
   },
   // Color
-  "Color: Alpha (custom)": {
+  "Color: Alpha": {
     "scope": "scss",
     "prefix": "ca",
     "body": "rgb(var(--color-${1:primary}-rgb, #{\\$color-${1:primary}-rgb}) / 0.${2:5})"
   },
   // Class
-  "Class: Active (custom)": {
+  "Class: Active": {
     "scope": "scss",
     "prefix": "caa",
     "body": "&.active {\n\t$0\n}"
@@ -616,7 +616,7 @@
     "prefix": "i",
     "body": "isolation: isolate;"
   },
-  "Opacity (custom)": {
+  "Opacity": {
     "scope": "scss",
     "prefix": "o",
     "body": "opacity: ${0:0};"
