@@ -12,6 +12,7 @@
     "pkief.material-icon-theme",
     "mintlify.document",
     "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
     "ducfilan.pug-formatter",
     "ms-vscode.remote-repositories",
     "sibiraj-s.vscode-scss-formatter",

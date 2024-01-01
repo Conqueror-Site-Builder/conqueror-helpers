@@ -49,6 +49,7 @@
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.wordSeparators": "`~!@#$%^&*()-_=+[{]}\\|;:'\",.<>/?",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   // Explorer
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
