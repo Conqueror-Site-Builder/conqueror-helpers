@@ -1,10 +1,5 @@
 {
   // Object
-  "Object: Root (empty)": {
-    "scope": "json",
-    "prefix": "ore",
-    "body": "{\n\t$0\n}"
-  },
   "Object": {
     "scope": "json",
     "prefix": "o",
