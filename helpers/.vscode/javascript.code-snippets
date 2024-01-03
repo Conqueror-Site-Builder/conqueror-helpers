@@ -3,125 +3,125 @@
   "Import: Package": {
     "scope": "javascript,typescript",
     "prefix": "ip",
-    "body": "import ${1:name} from '${2:name}'"
+    "body": "import ${1:name} from '${2:name}';"
   },
   // Listeners
   "Event: Listener": {
     "scope": "javascript,typescript",
     "prefix": "el",
-    "body": "document.addEventListener('${1:event}', (event) => {\n\t$2\n})"
+    "body": "document.addEventListener('${1:event}', (event) => {\n\t$2\n});"
   },
   "Event: Listener (click)": {
     "scope": "javascript,typescript",
     "prefix": "elc",
-    "body": "document.addEventListener('click', (event) => {\n\t$0\n})"
+    "body": "document.addEventListener('click', (event) => {\n\t$0\n});"
   },
   // Document queries
   "Const: Document (query selector all)": {
     "scope": "javascript,typescript",
     "prefix": "cdqsa",
-    "body": "const ${1:elements} = document.querySelectorAll('${2:element}')"
+    "body": "const ${1:elements} = document.querySelectorAll('${2:element}');"
   },
   "Const: Document (query selector)": {
     "scope": "javascript,typescript",
     "prefix": "cdqs",
-    "body": "const ${1:element} = document.querySelector('${2:element}')"
+    "body": "const ${1:element} = document.querySelector('${2:element}');"
   },
   "Const: Get Element (by id)": {
     "scope": "javascript,typescript",
     "prefix": "cgebi",
-    "body": "const ${1:element} = document.getElementById('${2:element}')"
+    "body": "const ${1:element} = document.getElementById('${2:element}');"
   },
   // Consts
   "Const: Empty": {
     "scope": "javascript,typescript",
     "prefix": "ce",
-    "body": "const ${1:element} = $2"
+    "body": "const ${1:element} = $2;"
   },
   "Const: Target Element (event.target)": {
     "scope": "javascript,typescript",
     "prefix": "cte",
-    "body": "const targetElement = event.target"
+    "body": "const targetElement = event.target;"
   },
   // Functions
   "Function: Expression": {
     "scope": "javascript,typescript",
     "prefix": "fe",
-    "body": "const ${1:name} = (${2:arguments}) => {\n\t$3\n}"
+    "body": "const ${1:name} = (${2:arguments}) => {\n\t$3\n};"
   },
   "Function: Method": {
     "scope": "javascript,typescript",
     "prefix": "fm",
-    "body": "${1:name}(${2:arguments}) {\n\t$3\n}"
+    "body": "${1:name}(${2:arguments}) {\n\t$3\n};"
   },
   // Loops
   "Loop: For Each": {
     "scope": "javascript,typescript",
     "prefix": "lfe",
-    "body": "${1:array}.forEach((${2:item}) => {\n\t$3\n})"
+    "body": "${1:array}.forEach((${2:item}) => {\n\t$3\n});"
   },
   // Time
   "Set: Interval (0)": {
     "scope": "javascript,typescript",
     "prefix": "si",
-    "body": "setInterval(($1) => {\n\t$2\n}, ${3:0})"
+    "body": "setInterval(($1) => {\n\t$2\n}, ${3:0});"
   },
   "Set: Timeout (0)": {
     "scope": "javascript,typescript",
     "prefix": "st",
-    "body": "setTimeout(($1) => {\n\t$2\n}, ${3:0})"
+    "body": "setTimeout(($1) => {\n\t$2\n}, ${3:0});"
   },
   // Elements Operations
   "Element: Add (class)": {
     "scope": "javascript,typescript",
     "prefix": "eac",
-    "body": "${1:element}.classList.add('${2:name}')"
+    "body": "${1:element}.classList.add('${2:name}');"
   },
   "Element: Toggle (class)": {
     "scope": "javascript,typescript",
     "prefix": "etc",
-    "body": "${1:element}.classList.toggle('${2:name}')"
+    "body": "${1:element}.classList.toggle('${2:name}');"
   },
   "Element: Remove (class)": {
     "scope": "javascript,typescript",
     "prefix": "erc",
-    "body": "${1:element}.classList.remove('${2:name}')"
+    "body": "${1:element}.classList.remove('${2:name}');"
   },
   "Element: Set (attribute)": {
     "scope": "javascript,typescript",
     "prefix": "esa",
-    "body": "${1:element}.setAttribute('${2:name}', ${3:value})"
+    "body": "${1:element}.setAttribute('${2:name}', ${3:value});"
   },
   "Element: Get (attribute)": {
     "scope": "javascript,typescript",
     "prefix": "ega",
-    "body": "${1:element}.dataset.${2:name}"
+    "body": "${1:element}.dataset.${2:name};"
   },
   "Element: Remove (attribute)": {
     "scope": "javascript,typescript",
     "prefix": "era",
-    "body": "${1:element}.removeAttribute('${2:name}')"
+    "body": "${1:element}.removeAttribute('${2:name}');"
   },
   // Insert
   "Insert: Adjacent (HTML)": {
     "scope": "javascript,typescript",
     "prefix": "iah",
-    "body": "${1:element}.insertAdjacentHTML('beforeend', $2)"
+    "body": "${1:element}.insertAdjacentHTML('beforeend', $2);"
   },
   "Insert: Inner (HTML)": {
     "scope": "javascript,typescript",
     "prefix": "iih",
-    "body": "${1:element}.innerHTML = $2"
+    "body": "${1:element}.innerHTML = $2;"
   },
   // Handle JSON
   "Handle: Parse (JSON)": {
     "scope": "javascript,typescript",
     "prefix": "hpj",
-    "body": "JSON.parse($0)"
+    "body": "JSON.parse($0);"
   },
   "Handle: Stringify (JSON)": {
     "scope": "javascript,typescript",
     "prefix": "hsj",
-    "body": "JSON.stringify($0)"
+    "body": "JSON.stringify($0);"
   }
 }
