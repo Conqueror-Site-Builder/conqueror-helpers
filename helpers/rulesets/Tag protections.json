@@ -1,9 +1,9 @@
 {
-  "id": 216508,
+  "id": 219584,
   "name": "Tag protections",
   "target": "tag",
   "source_type": "Repository",
-  "source": "Conqueror-Site-Builder/conqueror-repo-template",
+  "source": "Conqueror-Site-Builder/conqueror-helpers",
   "enforcement": "active",
   "conditions": {
     "ref_name": {
