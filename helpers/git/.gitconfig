@@ -1,10 +1,10 @@
 [user]
-	email = <user@users.noreply.github.com>
+  email = <user@users.noreply.github.com>
   name = user
 [core]
-	excludesFile = ~/.gitignore_global
-	pager = cat
-	whitespace = -trailing-space
+  excludesFile = ~/.gitignore_global
+  pager = cat
+  whitespace = -trailing-space
   autocrlf = input
   quotepath = off
   safecrlf = warn
@@ -19,7 +19,7 @@
   autoupdate = true
   enabled = true
 [commit]
-	template = ~/.gitmessage.txt
+  template = ~/.gitmessage.txt
 [tag]
   sort = version:refname
 [log]
