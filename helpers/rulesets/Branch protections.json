@@ -1,9 +1,9 @@
 {
-  "id": 216503,
+  "id": 219583,
   "name": "Branch protections",
   "target": "branch",
   "source_type": "Repository",
-  "source": "Conqueror-Site-Builder/conqueror-repo-template",
+  "source": "Conqueror-Site-Builder/conqueror-helpers",
   "enforcement": "active",
   "conditions": {
     "ref_name": {
@@ -15,16 +15,16 @@
   },
   "rules": [
     {
+      "type": "non_fast_forward"
+    },
+    {
       "type": "creation"
     },
     {
-      "type": "deletion"
+      "type": "required_signatures"
     },
     {
       "type": "required_linear_history"
-    },
-    {
-      "type": "required_signatures"
     },
     {
       "type": "pull_request",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "type": "non_fast_forward"
+      "type": "deletion"
     }
   ],
   "bypass_actors": [
