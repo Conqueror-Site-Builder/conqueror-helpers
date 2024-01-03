@@ -77,21 +77,21 @@
     "prefix": "cq",
     "body": ".quantity(data-quantity)\n\tbutton.quantity__button.quantity__button--plus(type='button' data-quantity-plus)\n\t.quantity__input\n\t\tinput(type='text' value='1' name='quantity' data-quantity-value)\n\tbutton.quantity__button.quantity__button--minus(type='button' data-quantity-minus)"
   },
-	"Component: Radio": {
-		"scope": "jade",
-		"prefix": "cr",
-		"body": ".options\n\tlabel.option\n\t\tinput.option__input(type='radio' name='option' checked)\n\t\tspan.option__box\n\t\t| text\n\tlabel.option\n\t\tinput.option__input(type='radio' name='option')\n\t\tspan.option__box\n\t\t| text"
-	},
-	"Component: Checkbox": {
-		"scope": "jade",
-		"prefix": "cc",
-		"body": ".checkboxes\n\tlabel.checkbox\n\t\tinput.checkbox__input(type='checkbox' name='checkbox')\n\t\tspan.checkbox__box\n\t\t\tsvg\n\t\t\t\tuse(href='@img/icons/sprite.svg#${0:check}')\n\t\t| text"
-	},
-	"Component: Textarea": {
-		"scope": "jade",
-		"prefix": "cte",
-		"body": "textarea.${1:input}(autocomplete='${2:given-name}' name='${3:message}' placeholder='$4')"
-	},
+  "Component: Radio": {
+    "scope": "jade",
+    "prefix": "cr",
+    "body": ".options\n\tlabel.option\n\t\tinput.option__input(type='radio' name='option' checked)\n\t\tspan.option__box\n\t\t| text\n\tlabel.option\n\t\tinput.option__input(type='radio' name='option')\n\t\tspan.option__box\n\t\t| text"
+  },
+  "Component: Checkbox": {
+    "scope": "jade",
+    "prefix": "cc",
+    "body": ".checkboxes\n\tlabel.checkbox\n\t\tinput.checkbox__input(type='checkbox' name='checkbox')\n\t\tspan.checkbox__box\n\t\t\tsvg\n\t\t\t\tuse(href='@img/icons/sprite.svg#${0:check}')\n\t\t| text"
+  },
+  "Component: Textarea": {
+    "scope": "jade",
+    "prefix": "cte",
+    "body": "textarea.${1:input}(autocomplete='${2:given-name}' name='${3:message}' placeholder='$4')"
+  },
   "Component: Input": {
     "scope": "jade",
     "prefix": "ci",

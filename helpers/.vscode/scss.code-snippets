@@ -117,17 +117,17 @@
     "prefix": "mqsd",
     "body": "@include media-scheme(dark) {\n\t$0\n}"
   },
-	// Media motion
-	"Mixin: Prefers Reduced Motion (reduce)": {
-		"scope": "scss",
-		"prefix": "mprmr",
-		"body": "@include media-motion(reduce) {\n\t$0\n}"
-	},
-	"Mixin: Prefers Reduced Motion (no-preference)": {
-		"scope": "scss",
-		"prefix": "mprmn",
-		"body": "@include media-motion(no-preference) {\n\t$0\n}"
-	},
+  // Media motion
+  "Mixin: Prefers Reduced Motion (reduce)": {
+    "scope": "scss",
+    "prefix": "mprmr",
+    "body": "@include media-motion(reduce) {\n\t$0\n}"
+  },
+  "Mixin: Prefers Reduced Motion (no-preference)": {
+    "scope": "scss",
+    "prefix": "mprmn",
+    "body": "@include media-motion(no-preference) {\n\t$0\n}"
+  },
   // Media hover
   "Mixin: Hover With Transition (all, 300ms)": {
     "scope": "scss",
