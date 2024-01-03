@@ -1,45 +1,9 @@
 {
-  // Include and extend
-  "Extend": {
-    "scope": "scss",
-    "prefix": "ext",
-    "body": "@extend %$0;"
-  },
+  // Include
   "Include": {
     "scope": "scss",
     "prefix": "inc",
     "body": "@include $0;"
-  },
-  // Extends
-  "Extend: List Counter": {
-    "scope": "scss",
-    "prefix": "elc",
-    "body": "@extend %list-counter;"
-  },
-  "Extend: Gray Filter": {
-    "scope": "scss",
-    "prefix": "egf",
-    "body": "@extend %gray-filter;"
-  },
-  "Extend: Hide Scroll": {
-    "scope": "scss",
-    "prefix": "ehs",
-    "body": "@extend %hide-scroll;"
-  },
-  "Extend: User Select None": {
-    "scope": "scss",
-    "prefix": "eusn",
-    "body": "@extend %user-select-none;"
-  },
-  "Extend: Mirror": {
-    "scope": "scss",
-    "prefix": "emir",
-    "body": "@extend %mirror;"
-  },
-  "Extend: Touch": {
-    "scope": "scss",
-    "prefix": "ess",
-    "body": "@extend %smooth-scroll;"
   },
   // Mixins
   "Mixin: Gradient Text": {
@@ -67,6 +31,11 @@
     "prefix": "msa",
     "body": "@include slide(${1:5}, ${2:100}, ${3:1}, 0.${4:2}, ${5:top});"
   },
+  "Mixin: Marquee": {
+    "scope": "scss",
+    "prefix": "mm",
+    "body": "@include marquee(${1:20}, ${2:30s}, ${3:linear}, 0.${4:1}, ${5:0});"
+  },
   "Mixin: Triangle": {
     "scope": "scss",
     "prefix": "mt",
@@ -82,36 +51,16 @@
     "prefix": "mro",
     "body": "@include responsive-output(${1:400}, ${2:\\$tablet}, ${3:0});"
   },
-  "Mixin: Responsive Value": {
-    "scope": "scss",
-    "prefix": "mrv",
-    "body": "@include responsive-value(\"$1\", $2, $3);"
-  },
   "Mixin: Responsive Value (font-size)": {
     "scope": "scss",
-    "prefix": "mrvfs",
+    "prefix": "mrvf",
     "body": "@include responsive-value(\"font-size\", ${1:\\$font-size}, $2);"
-  },
-  "Mixin: Responsive Value (gap)": {
-    "scope": "scss",
-    "prefix": "mrvg",
-    "body": "@include responsive-value(\"gap\", $1, $2);"
   },
   // Media queries
   "Mixin: @media Max And Min": {
     "scope": "scss",
     "prefix": "mqmm",
     "body": "@include media-min-max($1, $2) {\n\t$3\n}"
-  },
-  "Mixin: @media min": {
-    "scope": "scss",
-    "prefix": "mqmin",
-    "body": "@include media-min($1) {\n\t$2\n}"
-  },
-  "Mixin: @media max": {
-    "scope": "scss",
-    "prefix": "mqmax",
-    "body": "@include media-max($1) {\n\t$2\n}"
   },
   "Mixin: @media Min ($desktop)": {
     "scope": "scss",
@@ -153,32 +102,37 @@
     "prefix": "mqpmax",
     "body": "@include media-max(\\$phone) {\n\t$0\n}"
   },
+  "Mixin: @media Transparency (reduce)": {
+    "scope": "scss",
+    "prefix": "mqtr",
+    "body": "@include media-transparency(reduce) {\n\t$0\n}"
+  },
+  "Mixin: @media Transparency (no-preference)": {
+    "scope": "scss",
+    "prefix": "mqtn",
+    "body": "@include media-transparency(no-preference) {\n\t$0\n}"
+  },
+  "Mixin: @media Scheme (dark)": {
+    "scope": "scss",
+    "prefix": "mqsd",
+    "body": "@include media-scheme(dark) {\n\t$0\n}"
+  },
+	// Media motion
+	"Mixin: Prefers Reduced Motion (reduce)": {
+		"scope": "scss",
+		"prefix": "mprmr",
+		"body": "@include media-motion(reduce) {\n\t$0\n}"
+	},
+	"Mixin: Prefers Reduced Motion (no-preference)": {
+		"scope": "scss",
+		"prefix": "mprmn",
+		"body": "@include media-motion(no-preference) {\n\t$0\n}"
+	},
   // Media hover
   "Mixin: Hover With Transition (all, 300ms)": {
     "scope": "scss",
     "prefix": "mhta",
-    "body": "transition: ${1:all} var(--default-transition-duration, #{\\$default-transition-duration});\n\n@include media-hover {\n\t$3\n}"
-  },
-  "Mixin: Hover Decoration (underline)": {
-    "scope": "scss",
-    "prefix": "mhdu",
-    "body": "@include media-hover {\n\ttext-decoration: underline;\n}"
-  },
-  "Mixin: Hover Decoration (none)": {
-    "scope": "scss",
-    "prefix": "mhdn",
-    "body": "@include media-hover {\n\ttext-decoration: none;\n}"
-  },
-  // Media motion
-  "Mixin: Prefers Reduced Motion (reduce)": {
-    "scope": "scss",
-    "prefix": "mprmr",
-    "body": "@include media-motion(reduce) {\n\t$0\n}"
-  },
-  "Mixin: Prefers Reduced Motion (no-preference)": {
-    "scope": "scss",
-    "prefix": "mprmn",
-    "body": "@include media-motion(no-preference) {\n\t$0\n}"
+    "body": "transition: ${1:all} var(--transition-duration-default, #{\\$transition-duration-default});\n\n@include media-hover {\n\t$3\n}"
   },
   // Functions
   "Function: PX To EM": {
@@ -196,21 +150,10 @@
     "prefix": "fprc",
     "body": "to-percent($1, $2)"
   },
-  "Function: Divide": {
+  "Function: Divide (round)": {
     "scope": "scss",
-    "prefix": "fd",
-    "body": "div-rounding($1, $2)"
-  },
-  // Theme
-  "Theme: Dark": {
-    "scope": "scss",
-    "prefix": "td",
-    "body": ".dark & {\n\t$0\n}"
-  },
-  "Theme: Light": {
-    "scope": "scss",
-    "prefix": "tl",
-    "body": ".ligth & {\n\t$0\n}"
+    "prefix": "fdr",
+    "body": "decimal-round($1, $2)"
   },
   // Font
   "Font: Family": {
@@ -221,7 +164,7 @@
   "Font: Line Height": {
     "scope": "scss",
     "prefix": "flh",
-    "body": "line-height: div-rounding($1, ${2:\\$font-size});"
+    "body": "line-height: decimal-round($1, ${2:\\$font-size});"
   },
   "Font: Letter Spacing (EM)": {
     "scope": "scss",
@@ -239,9 +182,9 @@
     "body": "white-space: nowrap;"
   },
   // Position
-  "Position": {
+  "Position: Cover": {
     "scope": "scss",
-    "prefix": "p",
+    "prefix": "pc",
     "body": "position: ${0:absolute};\ninset: 0;"
   },
   // Flex
@@ -293,34 +236,29 @@
   "Flex: Basis (50%)": {
     "scope": "scss",
     "prefix": "fbh",
-    "body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: 50%;"
+    "body": "flex: 0 0 50%;"
   },
   "Flex: Basis (33%)": {
     "scope": "scss",
     "prefix": "fbt",
-    "body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: 33%;"
+    "body": "flex: 0 0 33%;"
   },
   "Flex: Basis (25%)": {
     "scope": "scss",
     "prefix": "fbq",
-    "body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: 25%;"
+    "body": "flex: 0 0 25%;"
   },
   "Flex: Basis (percent)": {
     "scope": "scss",
     "prefix": "fbp",
-    "body": "flex-grow: 0;\nflex-shrink: 0;\nflex-basis: to-percent($1, $2);"
+    "body": "flex: 0 0 to-percent($1, $2);"
   },
   "Flex: Basis": {
     "scope": "scss",
     "prefix": "fb",
-    "body": "flex-grow: 0;\n\tflex-shrink: 0;\n\tflex-basis: $0;"
+    "body": "flex: 0 0 $0;"
   },
   // Margin
-  "Margin (REM)": {
-    "scope": "scss",
-    "prefix": "mr",
-    "body": "margin-block-start: to-rem(${1:0});\nmargin-block-end: to-rem(${2:0});\nmargin-inline-start: to-rem(${3:0});\nmargin-inline-end: to-rem(${4:0});"
-  },
   "Margin: Block (REM)": {
     "scope": "scss",
     "prefix": "mbr",
@@ -389,11 +327,6 @@
     "body": "min-inline-size: 0;"
   },
   // Padding
-  "Padding (REM)": {
-    "scope": "scss",
-    "prefix": "pr",
-    "body": "padding-block-start: to-rem(${1:0});\npadding-block-end: to-rem(${2:0});\npadding-inline-start: to-rem(${3:0});\npadding-inline-end: to-rem(${4:0});"
-  },
   "Padding: Block (REM)": {
     "scope": "scss",
     "prefix": "pbr",
@@ -430,11 +363,6 @@
     "prefix": "br5",
     "body": "border-radius: 50%;"
   },
-  // Background
-  "Background: Image": {
-    "scope": "scss",
-    "prefix": "bi",
-    "body": "background-image: url(\"@img$0\");\nbackground-position-y: 0;\nbackground-position-x: 0;\nnbackground-size: cover;\nbackground-repeat: no-repeat;"
   },
   // Childs
   "Child: Not Last": {
@@ -504,7 +432,7 @@
   "Transition: All (300ms)": {
     "scope": "scss",
     "prefix": "ta3",
-    "body": "transition: ${1:all} var(--default-transition-duration, #{\\$default-transition-duration});"
+    "body": "transition: ${1:all} var(--transition-duration-default, #{\\$transition-duration-default});"
   },
   // Transform
   "Transform: Rotate": {
@@ -519,7 +447,7 @@
   },
   "Transform: Translate (-50%)": {
     "scope": "scss",
-    "prefix": "tt",
+    "prefix": "ttc",
     "body": "transform: translate(-50%, -50%);"
   },
   // Filters
@@ -527,11 +455,6 @@
     "scope": "scss",
     "prefix": "fbb",
     "body": "backdrop-filter: blur(to-rem($0));"
-  },
-  "Filter": {
-    "scope": "scss",
-    "prefix": "f",
-    "body": "position: relative;\n\n&::before {\n\t@include pseudo;\n\tinset: 0;\n\tbackground-color: rgb(var(--color-${0:primary}-rgb, #{\\$color-${0:primary}-rgb}) / 0.3);\n}"
   },
   // Color
   "Color: Alpha": {

@@ -14,7 +14,7 @@
   "Loop: Each": {
     "scope": "jade",
     "prefix": "le",
-    "body": "each ${1:item} in ${2:array}.${3:items}\n\t"
+    "body": "each ${1:item} in ${2:array}.${3:items}\n\t $4"
   },
   // Conditions
   "Condition: Ternary": {
@@ -80,12 +80,12 @@
 	"Component: Radio": {
 		"scope": "jade",
 		"prefix": "cr",
-		"body": ".options\n\tlabel.label.option\n\t\tinput.option__input(type='radio' name='option' checked)\n\t\tspan.option__box\n\t\t| text\n\tlabel.label.option\n\t\tinput.option__input(type='radio' name='option')\n\t\tspan.option__box\n\t\t| text"
+		"body": ".options\n\tlabel.option\n\t\tinput.option__input(type='radio' name='option' checked)\n\t\tspan.option__box\n\t\t| text\n\tlabel.option\n\t\tinput.option__input(type='radio' name='option')\n\t\tspan.option__box\n\t\t| text"
 	},
 	"Component: Checkbox": {
 		"scope": "jade",
 		"prefix": "cc",
-		"body": ".checkboxes\n\tlabel.label.checkbox\n\t\tinput.checkbox__input(type='checkbox' name='checkbox')\n\t\tspan.checkbox__box\n\t\t\tsvg\n\t\t\t\tuse(href='@img/icons/sprite.svg#${0:check}')\n\t\t| text\n\tlabel.label.checkbox\n\t\tinput.checkbox__input(type='checkbox' name='checkbox')\n\t\tspan.checkbox__box\n\t\t\tsvg\n\t\t\t\tuse(href='@img/icons/sprite.svg#${0:check}')\n\t\t| text"
+		"body": ".checkboxes\n\tlabel.checkbox\n\t\tinput.checkbox__input(type='checkbox' name='checkbox')\n\t\tspan.checkbox__box\n\t\t\tsvg\n\t\t\t\tuse(href='@img/icons/sprite.svg#${0:check}')\n\t\t| text"
 	},
 	"Component: Textarea": {
 		"scope": "jade",
