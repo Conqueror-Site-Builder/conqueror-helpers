@@ -3,7 +3,7 @@
   "name": "Branch protections",
   "target": "branch",
   "source_type": "Repository",
-  "source": "Conqueror-Site-Builder/conqueror-helpers",
+  "source": "",
   "enforcement": "active",
   "conditions": {
     "ref_name": {
