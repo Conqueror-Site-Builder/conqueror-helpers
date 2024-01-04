@@ -4,8 +4,8 @@ Conqueror Helpers is a helper package for easier development.
 
 > [!TIP]
 > Nice addition for [Conqueror](https://github.com/Conqueror-Site-Builder/conqueror),
-<!-- > [Styler](https://github.com/Conqueror-Site-Builder/styler), -->
 > and [Conqueror Repo Template](https://github.com/Conqueror-Site-Builder/conqueror-repo-template)!
+<!-- > [Styler](https://github.com/Conqueror-Site-Builder/styler), -->
 
 > [!WARNING]
 > This repository contains configuration and snippets for **vscode only**,
