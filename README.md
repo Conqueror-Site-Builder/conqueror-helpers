@@ -5,7 +5,7 @@ Conqueror Helpers is a helper package for easier development.
 > [!TIP]
 > Nice addition for [Conqueror](https://github.com/Conqueror-Site-Builder/conqueror),
 > and [Conqueror Repo Template](https://github.com/Conqueror-Site-Builder/conqueror-repo-template)!
-<!-- > [Styler](https://github.com/Conqueror-Site-Builder/styler), -->
+<!-- > [Zenitt](https://github.com/Conqueror-Site-Builder/zenitt), -->
 
 > [!WARNING]
 > This repository contains configuration and snippets for **vscode only**,
@@ -33,7 +33,7 @@ The following files are located in the **.vscode/** folder:
 -   [`scss.code-snippets`](https://github.com/Conqueror-Site-Builder/conqueror-helpers/blob/main/helpers/.vscode/scss.code-snippets).
 
     <!-- > If you are going to use snippets of scss functions or mixins then
-    > you need to install the [Styler](https://github.com/Conqueror-Site-Builder/styler) Library. -->
+    > you need to install the [Zenitt](https://github.com/Conqueror-Site-Builder/zenitt) Library. -->
 
 ## Bash
 
