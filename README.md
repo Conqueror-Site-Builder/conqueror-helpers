@@ -1,11 +1,20 @@
 # Conqueror Helpers
 
-Conqueror Helpers is a helper package for easier development.
+## Table of Contents
+
+-   [Visual Studio Code](#visual-studio-code)
+-   [Bash](#bash)
+-   [Git](#git)
+-   [NPM](#npm)
+-   [GitHub Rulesets](#github-rulesets)
+-   [License](#license)
+
+**Conqueror Helpers** is a helper package for easier development.
 
 > [!TIP]
-> Nice addition for [Conqueror](https://github.com/Conqueror-Site-Builder/conqueror),
-> and [Conqueror Repo Template](https://github.com/Conqueror-Site-Builder/conqueror-repo-template)!
-<!-- > [Zenitt](https://github.com/Conqueror-Site-Builder/zenitt), -->
+> Nice addition for [**Conqueror**](https://github.com/Conqueror-Site-Builder/conqueror),
+> and [**Conqueror Repo Template**](https://github.com/Conqueror-Site-Builder/conqueror-repo-template)!
+<!-- > [**Zenitt**](https://github.com/Conqueror-Site-Builder/zenitt), -->
 
 > [!WARNING]
 > This repository contains configuration and snippets for **vscode only**,
@@ -33,7 +42,7 @@ The following files are located in the **.vscode/** folder:
 -   [`scss.code-snippets`](https://github.com/Conqueror-Site-Builder/conqueror-helpers/blob/main/helpers/.vscode/scss.code-snippets).
 
     <!-- > If you are going to use snippets of scss functions or mixins then
-    > you need to install the [Zenitt](https://github.com/Conqueror-Site-Builder/zenitt) Library. -->
+    > you need to install the [**Zenitt**](https://github.com/Conqueror-Site-Builder/zenitt) Library. -->
 
 ## Bash
 
@@ -43,7 +52,7 @@ is the **GitHub theme**.
 
 ## Git
 
-The following files are located in the **git** folder:
+The following files are located in the **git/** folder:
 
 -   [`.gitconfig`](https://github.com/Conqueror-Site-Builder/conqueror-helpers/blob/main/helpers/git/.gitconfig) -
     here the emphasis is on formatting the output and convenient
